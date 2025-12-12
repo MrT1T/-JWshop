@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/fintm/projects/jewelryShop/client/src/components/Provider/Provider.tsx"],"sourcesContent":["'use client';\r\n\r\nimport React, { FC } from 'react';\r\nimport { ChakraProvider, extendTheme } from '@chakra-ui/react';\r\n\r\nconst theme = extendTheme({\r\n  fonts: {\r\n    heading:\r\n      \"Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial\",\r\n    body: \"Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial\",\r\n  },\r\n  styles: {\r\n    global: {\r\n      body: {\r\n        bg: 'white',\r\n        color: 'gray.800',\r\n      },\r\n    },\r\n  },\r\n});\r\n\r\ninterface IProps {\r\n  children: React.ReactNode;\r\n}\r\n\r\nexport const Provider: FC<IProps> = ({ children }) => {\r\n  return <ChakraProvider theme={theme}>{children}</ChakraProvider>;\r\n};\r\n"],"names":[],"mappings":";;;;;AAGA;AAAA;AAHA;;;AAKA,MAAM,QAAQ,IAAA,+MAAW,EAAC;IACxB,OAAO;QACL,SACE;QACF,MAAM;IACR;IACA,QAAQ;QACN,QAAQ;YACN,MAAM;gBACJ,IAAI;gBACJ,OAAO;YACT;QACF;IACF;AACF;AAMO,MAAM,WAAuB;QAAC,EAAE,QAAQ,EAAE;IAC/C,qBAAO,6LAAC,kMAAc;QAAC,OAAO;kBAAQ;;;;;;AACxC;KAFa","debugId":null}}]
+}
