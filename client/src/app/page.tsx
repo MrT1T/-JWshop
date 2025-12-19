@@ -16,100 +16,188 @@ import {
   InputRightElement,
   Divider,
   IconButton,
-  Spacer,
+  Container,
   useBreakpointValue,
 } from '@chakra-ui/react';
+import { HamburgerIcon } from '@chakra-ui/icons';
 
 const Nav: React.FC = () => {
   const isMobile = useBreakpointValue({ base: true, md: false });
 
   return (
-    <Flex
-      as="nav"
-      align="center"
-      justify="space-between"
-      px={{ base: 4, md: 12 }}
-      py={6}
-    >
-      <Heading size="md">JWShop</Heading>
+    <Box bg="white" borderBottom="1px" borderColor="gray.100">
+      <Container maxW="container.xl">
+        <Flex as="nav" align="center" justify="space-between" py={4}>
+          <Heading size="lg" fontWeight="bold" letterSpacing="tight">
+            JWShop
+          </Heading>
 
-      {!isMobile ? (
-        <HStack spacing={6}>
-          <Link>Home</Link>
-          <Link>About</Link>
-          <Link>Blog</Link>
-          <Link>Shop</Link>
-          <Link>Features</Link>
-          <Link>Contacts</Link>
-          <Link>Instant Quote</Link>
-        </HStack>
-      ) : (
-        <IconButton
-          aria-label="menu"
-          icon={<Box as="span" bg="black" w="18px" h="2px" />}
-        />
-      )}
-    </Flex>
+          {!isMobile ? (
+            <HStack spacing={8}>
+              <Link
+                fontSize="sm"
+                fontWeight="medium"
+                _hover={{ color: 'gray.600' }}
+              >
+                Home
+              </Link>
+              <Link
+                fontSize="sm"
+                fontWeight="medium"
+                _hover={{ color: 'gray.600' }}
+              >
+                About
+              </Link>
+              <Link
+                fontSize="sm"
+                fontWeight="medium"
+                _hover={{ color: 'gray.600' }}
+              >
+                Blog
+              </Link>
+              <Link
+                fontSize="sm"
+                fontWeight="medium"
+                _hover={{ color: 'gray.600' }}
+              >
+                Shop
+              </Link>
+              <Link
+                fontSize="sm"
+                fontWeight="medium"
+                _hover={{ color: 'gray.600' }}
+              >
+                Features
+              </Link>
+              <Link
+                fontSize="sm"
+                fontWeight="medium"
+                _hover={{ color: 'gray.600' }}
+              >
+                Contacts
+              </Link>
+              <Link
+                fontSize="sm"
+                fontWeight="medium"
+                _hover={{ color: 'gray.600' }}
+              >
+                Instant Quote
+              </Link>
+            </HStack>
+          ) : (
+            <IconButton
+              aria-label="menu"
+              icon={<HamburgerIcon />}
+              variant="ghost"
+            />
+          )}
+        </Flex>
+      </Container>
+    </Box>
   );
 };
 
 const Hero: React.FC = () => {
   return (
-    <Flex
-      as="section"
-      direction={{ base: 'column', md: 'row' }}
-      align="center"
-      justify="space-between"
-      px={{ base: 6, md: 12 }}
-      py={12}
-      gap={8}
-    >
-      <VStack align="start" spacing={6} maxW={{ base: '100%', md: '48%' }}>
-        <Heading size="2xl">A Unique Watch That Fits Your Style</Heading>
-        <Text fontSize="lg" color="gray.600">
-          The new Lawson collection is already here! This quartz Lawson Franklin
-          38 model, designed with simplicity and elegance, is truly a cherry on
-          the cake. Comes in different sizes and band colors, has a stainless
-          steel back for a personalized engraving.
-        </Text>
-        <HStack spacing={4}>
-          <Button colorScheme="blackAlpha" bg="black" color="white">
-            Learn More
-          </Button>
-          <Button variant="outline">View</Button>
-        </HStack>
-      </VStack>
+    <Box bg="gray.50" py={{ base: 12, md: 20 }}>
+      <Container maxW="container.xl">
+        <Flex
+          as="section"
+          direction={{ base: 'column', md: 'row' }}
+          align="center"
+          justify="space-between"
+          gap={12}
+        >
+          <VStack align="start" spacing={6} maxW={{ base: '100%', md: '52%' }}>
+            <Heading size="3xl" lineHeight="1.2" fontWeight="bold">
+              A Unique Watch That Fits Your Style
+            </Heading>
+            <Text fontSize="lg" color="gray.600" lineHeight="1.7">
+              The new Lawson collection is already here! This quartz Lawson
+              Franklin 38 model, designed with simplicity and elegance, is truly
+              a cherry on the cake. Comes in different sizes and band colors,
+              has a stainless steel back for a personalized engraving.
+            </Text>
+            <HStack spacing={4} pt={2}>
+              <Button
+                size="lg"
+                colorScheme="blackAlpha"
+                bg="black"
+                color="white"
+                px={8}
+                _hover={{ bg: 'gray.800' }}
+              >
+                Learn More
+              </Button>
+              <Button
+                size="lg"
+                variant="outline"
+                borderColor="black"
+                color="black"
+                px={8}
+                _hover={{ bg: 'gray.100' }}
+              >
+                View
+              </Button>
+            </HStack>
+          </VStack>
 
-      {/* Black square placeholder for image */}
-      <Box w={{ base: '100%', md: '44%' }} h="320px" bg="black" />
-    </Flex>
+          <Box
+            w={{ base: '100%', md: '42%' }}
+            h={{ base: '280px', md: '400px' }}
+            bg="black"
+            borderRadius="lg"
+            boxShadow="xl"
+          />
+        </Flex>
+      </Container>
+    </Box>
   );
 };
 
-const SplitSection: React.FC<{ title: string; text: string; cta?: string }> = ({
-  title,
-  text,
-  cta,
-}) => {
+const SplitSection: React.FC<{
+  title: string;
+  text: string;
+  cta?: string;
+  reverse?: boolean;
+}> = ({ title, text, cta, reverse = false }) => {
   return (
-    <Flex
-      direction={{ base: 'column', md: 'row' }}
-      px={{ base: 6, md: 12 }}
-      py={10}
-      gap={8}
-      align="center"
-    >
-      <Box flex="1">
-        <Heading size="lg">{title}</Heading>
-        <Text mt={4} color="gray.600">
-          {text}
-        </Text>
-        <Button mt={4} colorScheme="blackAlpha" bg="black" color="white">
-          {cta ?? 'Learn More'}
-        </Button>
-      </Box>
-      <Box w={{ base: '100%', md: '420px' }} h="240px" bg="black" />
-    </Flex>
+    <Box py={{ base: 12, md: 16 }}>
+      <Container maxW="container.xl">
+        <Flex
+          direction={{ base: 'column', md: reverse ? 'row-reverse' : 'row' }}
+          gap={12}
+          align="center"
+        >
+          <VStack flex="1" align="start" spacing={5}>
+            <Heading size="xl" fontWeight="bold">
+              {title}
+            </Heading>
+            <Text color="gray.600" lineHeight="1.7" fontSize="md">
+              {text}
+            </Text>
+            <Button
+              mt={2}
+              size="lg"
+              colorScheme="blackAlpha"
+              bg="black"
+              color="white"
+              px={8}
+              _hover={{ bg: 'gray.800' }}
+            >
+              {cta ?? 'Learn More'}
+            </Button>
+          </VStack>
+          <Box
+            w={{ base: '100%', md: '48%' }}
+            h={{ base: '240px', md: '320px' }}
+            bg="black"
+            borderRadius="lg"
+            boxShadow="lg"
+          />
+        </Flex>
+      </Container>
+    </Box>
   );
 };
 
@@ -127,44 +215,78 @@ const Bestsellers: React.FC = () => {
   ];
 
   return (
-    <Box px={{ base: 6, md: 12 }} py={8}>
-      <Heading size="lg" mb={6}>
-        Our Bestsellers
-      </Heading>
+    <Box bg="white" py={{ base: 12, md: 16 }}>
+      <Container maxW="container.xl">
+        <Heading size="xl" mb={8} fontWeight="bold">
+          Our Bestsellers
+        </Heading>
 
-      <SimpleGrid columns={{ base: 1, md: 4 }} spacing={6}>
-        {products.map((p, i) => (
-          <Box key={i} borderWidth="1px" borderRadius="md" p={4}>
-            <Box bg="black" w="100%" h="160px" mb={4} />
-            <Text fontWeight="semibold">{p.title}</Text>
-            <Text color="gray.600" mt={2}>
-              {p.old ? (
-                <span>
-                  <Text
-                    as="span"
-                    textDecoration="line-through"
-                    color="gray.400"
-                  >
-                    {p.old}
-                  </Text>{' '}
-                  <Text as="span" color="red.500">
-                    {p.discount}
-                  </Text>
-                </span>
-              ) : (
-                p.price
-              )}
-            </Text>
-          </Box>
-        ))}
-      </SimpleGrid>
+        <SimpleGrid columns={{ base: 1, sm: 2, md: 4 }} spacing={6}>
+          {products.map((p, i) => (
+            <Box
+              key={i}
+              borderWidth="1px"
+              borderColor="gray.200"
+              borderRadius="lg"
+              overflow="hidden"
+              _hover={{ shadow: 'md', transform: 'translateY(-2px)' }}
+              transition="all 0.2s"
+            >
+              <Box bg="gray.100" w="100%" h="200px" />
+              <Box p={5}>
+                <Text fontWeight="semibold" fontSize="sm" mb={3} minH="40px">
+                  {p.title}
+                </Text>
+                <Text fontWeight="bold" fontSize="lg">
+                  {p.old ? (
+                    <Flex align="center" gap={2}>
+                      <Text
+                        as="span"
+                        textDecoration="line-through"
+                        color="gray.400"
+                        fontSize="md"
+                      >
+                        {p.old}
+                      </Text>
+                      <Text as="span" color="red.500" fontSize="sm">
+                        {p.discount}
+                      </Text>
+                      <Text as="span" color="black">
+                        {p.price}
+                      </Text>
+                    </Flex>
+                  ) : (
+                    p.price
+                  )}
+                </Text>
+              </Box>
+            </Box>
+          ))}
+        </SimpleGrid>
 
-      <HStack mt={6} spacing={4}>
-        <Button variant="outline">Show all</Button>
-        <Button colorScheme="blackAlpha" bg="black" color="white">
-          View
-        </Button>
-      </HStack>
+        <HStack mt={8} spacing={4}>
+          <Button
+            variant="outline"
+            size="lg"
+            borderColor="black"
+            color="black"
+            px={8}
+            _hover={{ bg: 'gray.50' }}
+          >
+            Show all
+          </Button>
+          <Button
+            size="lg"
+            colorScheme="blackAlpha"
+            bg="black"
+            color="white"
+            px={8}
+            _hover={{ bg: 'gray.800' }}
+          >
+            View
+          </Button>
+        </HStack>
+      </Container>
     </Box>
   );
 };
@@ -177,28 +299,45 @@ const Journal: React.FC = () => {
   ];
 
   return (
-    <Box px={{ base: 6, md: 12 }} py={8}>
-      <Heading size="lg" mb={4}>
-        Journal & Blog
-      </Heading>
-      <SimpleGrid columns={{ base: 1, md: 3 }} spacing={6}>
-        {posts.map((p, i) => (
-          <Box key={i} borderWidth="1px" borderRadius="md" overflow="hidden">
-            <Box bg="black" h="150px" />
-            <Box p={4}>
-              <Text fontSize="sm" color="gray.500">
-                {p.date}
-              </Text>
-              <Text mt={2} fontWeight="semibold">
-                {p.title}
-              </Text>
+    <Box bg="gray.50" py={{ base: 12, md: 16 }}>
+      <Container maxW="container.xl">
+        <Heading size="xl" mb={8} fontWeight="bold">
+          Journal & Blog
+        </Heading>
+        <SimpleGrid columns={{ base: 1, sm: 2, md: 3 }} spacing={8}>
+          {posts.map((p, i) => (
+            <Box
+              key={i}
+              borderWidth="1px"
+              borderColor="gray.200"
+              borderRadius="lg"
+              overflow="hidden"
+              bg="white"
+              _hover={{ shadow: 'lg', transform: 'translateY(-2px)' }}
+              transition="all 0.2s"
+            >
+              <Box bg="gray.200" h="200px" />
+              <Box p={6}>
+                <Text fontSize="sm" color="gray.500" mb={2}>
+                  {p.date}
+                </Text>
+                <Text fontWeight="semibold" fontSize="md" lineHeight="1.5">
+                  {p.title}
+                </Text>
+              </Box>
             </Box>
-          </Box>
-        ))}
-      </SimpleGrid>
-      <Button mt={6} variant="link" colorScheme="blackAlpha">
-        Read more
-      </Button>
+          ))}
+        </SimpleGrid>
+        <Button
+          mt={8}
+          variant="link"
+          colorScheme="blackAlpha"
+          fontSize="md"
+          fontWeight="semibold"
+        >
+          Read more →
+        </Button>
+      </Container>
     </Box>
   );
 };
@@ -209,58 +348,106 @@ const Footer: React.FC = () => {
       as="footer"
       borderTopWidth={1}
       borderColor="gray.200"
-      mt={12}
-      py={8}
-      px={{ base: 6, md: 12 }}
+      bg="white"
+      py={12}
     >
-      <Flex direction={{ base: 'column', md: 'row' }} align="center" gap={6}>
-        <Heading size="sm">JWShop</Heading>
+      <Container maxW="container.xl">
+        <Flex
+          direction={{ base: 'column', md: 'row' }}
+          align="start"
+          gap={8}
+          mb={8}
+        >
+          <Box flex="1">
+            <Heading size="lg" mb={4} fontWeight="bold">
+              JWShop
+            </Heading>
+          </Box>
 
-        <HStack spacing={4} display={{ base: 'none', md: 'flex' }}>
-          <Link>Home</Link>
-          <Link>About</Link>
-          <Link>Blog</Link>
-          <Link>Shop</Link>
-          <Link>Features</Link>
-          <Link>Contacts</Link>
-          <Link>Instant Quote</Link>
-        </HStack>
+          <HStack spacing={6} display={{ base: 'none', md: 'flex' }} flex="2">
+            <Link fontSize="sm" _hover={{ color: 'gray.600' }}>
+              Home
+            </Link>
+            <Link fontSize="sm" _hover={{ color: 'gray.600' }}>
+              About
+            </Link>
+            <Link fontSize="sm" _hover={{ color: 'gray.600' }}>
+              Blog
+            </Link>
+            <Link fontSize="sm" _hover={{ color: 'gray.600' }}>
+              Shop
+            </Link>
+            <Link fontSize="sm" _hover={{ color: 'gray.600' }}>
+              Features
+            </Link>
+            <Link fontSize="sm" _hover={{ color: 'gray.600' }}>
+              Contacts
+            </Link>
+            <Link fontSize="sm" _hover={{ color: 'gray.600' }}>
+              Instant Quote
+            </Link>
+          </HStack>
 
-        <Spacer />
+          <Box maxW={{ base: '100%', md: '360px' }} w="100%" flex="1">
+            <Text mb={3} fontSize="sm" fontWeight="medium">
+              Subscribe to our newsletter
+            </Text>
+            <InputGroup size="md">
+              <Input
+                placeholder="Enter your email"
+                borderColor="gray.300"
+                _hover={{ borderColor: 'gray.400' }}
+                _focus={{ borderColor: 'black', boxShadow: 'none' }}
+              />
+              <InputRightElement width="5rem">
+                <Button
+                  h="1.75rem"
+                  size="sm"
+                  bg="black"
+                  color="white"
+                  _hover={{ bg: 'gray.800' }}
+                  fontSize="xs"
+                >
+                  Subscribe
+                </Button>
+              </InputRightElement>
+            </InputGroup>
+          </Box>
+        </Flex>
 
-        <Box maxW="420px" w="100%">
-          <Text mb={2}>Lorem ipsum dolor sit amet</Text>
-          <InputGroup size="md">
-            <Input placeholder="Email" />
-            <InputRightElement width="6.5rem">
-              <Button h="1.75rem" size="sm" bg="black" color="white">
-                Send
-              </Button>
-            </InputRightElement>
-          </InputGroup>
-        </Box>
-      </Flex>
+        <Divider mb={6} />
 
-      <Divider my={6} />
-
-      <Flex
-        justify="space-between"
-        align="center"
-        fontSize="sm"
-        color="gray.600"
-      >
-        <Text>©2025 JWShop</Text>
-        <Text>
-          Home · About · Blog · Shop · Features · Contacts · Instant Quote
-        </Text>
-      </Flex>
+        <Flex
+          direction={{ base: 'column', md: 'row' }}
+          justify="space-between"
+          align={{ base: 'start', md: 'center' }}
+          gap={4}
+          fontSize="sm"
+          color="gray.600"
+        >
+          <Text>© 2025 JWShop. All rights reserved.</Text>
+          <HStack spacing={3} display={{ base: 'none', md: 'flex' }}>
+            <Link fontSize="xs" _hover={{ color: 'gray.800' }}>
+              Privacy Policy
+            </Link>
+            <Text>·</Text>
+            <Link fontSize="xs" _hover={{ color: 'gray.800' }}>
+              Terms of Service
+            </Link>
+            <Text>·</Text>
+            <Link fontSize="xs" _hover={{ color: 'gray.800' }}>
+              Contact Us
+            </Link>
+          </HStack>
+        </Flex>
+      </Container>
     </Box>
   );
 };
 
 const Home: React.FC = () => {
   return (
-    <Box>
+    <Box minH="100vh" bg="white">
       <Nav />
       <Hero />
 
@@ -278,6 +465,7 @@ const Home: React.FC = () => {
         title="Swiss Essence"
         text="The first association that comes to one’s mind with the phrase “a good wristwatch” is naturally a one made somewhere in Switzerland. Do you want to know what makes Swiss watches stand out?"
         cta="Learn More"
+        reverse={true}
       />
 
       <Journal />

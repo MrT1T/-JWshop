@@ -19,6 +19,7 @@ node_modules/
 # Production build
 /build
 /dist
+/figma
 
 # Runtime data
 pids
