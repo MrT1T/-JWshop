@@ -18,6 +18,7 @@ import {
   Divider,
 } from '@chakra-ui/react';
 import Header from '@/components/Header';
+import { PromoBannerManager } from '@/components/PromoBanner';
 
 interface CartItem {
   id: number;
@@ -61,6 +62,7 @@ const CheckoutPage: React.FC = () => {
 
   return (
     <>
+      <PromoBannerManager />
       <Header />
       <Box py={16}>
         <Container maxW="container.xl">

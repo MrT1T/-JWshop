@@ -6,6 +6,121 @@ exports[`Home component renders correctly and matches snapshot 1`] = `
     class="css-6b4w0n"
   >
     <div
+      class="css-p64ykl"
+    >
+      <div
+        class="css-kwsxe9"
+      >
+        <div
+          class="css-1396cln"
+        >
+          <p
+            class="chakra-text css-8frxog"
+          >
+            LIMITED TIME 
+            <span
+              class="chakra-text css-1h7bc0l"
+            >
+              SALE
+            </span>
+          </p>
+          <div
+            class="css-1yxs27r"
+          >
+            <div
+              class="css-1k2969j"
+            >
+              <div
+                class="css-1o5mf2t"
+              />
+              <div
+                class="css-oc3fy4"
+              >
+                <p
+                  class="chakra-text css-1k3umo3"
+                >
+                  SAVE UP TO
+                </p>
+                <p
+                  class="chakra-text css-1f4npcx"
+                >
+                  50%
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="css-7se1um"
+          >
+            <p
+              class="chakra-text css-106uhfd"
+            >
+              LIMITED TIME 
+              <span
+                class="chakra-text css-1h7bc0l"
+              >
+                SALE
+              </span>
+            </p>
+            <div
+              class="css-k008qs"
+            >
+              <p
+                class="chakra-text css-w9n5vf"
+              >
+                02
+              </p>
+              <p
+                class="chakra-text css-lfq40t"
+              >
+                :
+              </p>
+              <p
+                class="chakra-text css-w9n5vf"
+              >
+                30
+              </p>
+              <p
+                class="chakra-text css-lfq40t"
+              >
+                :
+              </p>
+              <p
+                class="chakra-text css-w9n5vf"
+              >
+                00
+              </p>
+            </div>
+          </div>
+          <div
+            class="css-gojuux"
+          >
+            <div
+              class="css-1k2969j"
+            >
+              <div
+                class="css-1o5mf2t"
+              />
+              <div
+                class="css-oc3fy4"
+              >
+                <p
+                  class="chakra-text css-1k3umo3"
+                >
+                  SAVE UP TO
+                </p>
+                <p
+                  class="chakra-text css-1f4npcx"
+                >
+                  50%
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
       class="css-1uwga29"
     >
       <div

@@ -20,6 +20,7 @@ import {
 } from '@chakra-ui/react';
 import { SearchIcon } from '@chakra-ui/icons';
 import Header from '@/components/Header';
+import { PromoBannerManager } from '@/components/PromoBanner';
 
 // Mock data for products
 const products = [
@@ -45,6 +46,9 @@ const ShopPage: React.FC = () => {
 
   return (
     <Box bg="white" minH="100vh">
+      {/* Promo Banner */}
+      <PromoBannerManager />
+      
       {/* Header */}
       <Header />
 

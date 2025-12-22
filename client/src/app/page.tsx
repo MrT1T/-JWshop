@@ -18,6 +18,7 @@ import {
   Container,
 } from '@chakra-ui/react';
 import Header from '@/components/Header';
+import { PromoBannerManager } from '@/components/PromoBanner';
 
 const Hero: React.FC = () => {
   return (
@@ -370,6 +371,7 @@ const Footer: React.FC = () => {
 const Home: React.FC = () => {
   return (
     <Box minH="100vh" bg="white">
+      <PromoBannerManager />
       <Header />
       <Hero />
 
