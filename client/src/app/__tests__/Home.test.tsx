@@ -119,19 +119,14 @@ describe('Home component', () => {
   it('renders footer with JWShop, links and email input', () => {
     renderWithChakra(<Home />);
     expect(screen.getAllByRole('heading', { name: 'JWShop' })).toHaveLength(2);
-    expect(screen.getByPlaceholderText('Email')).toBeInTheDocument();
-    expect(screen.getByRole('button', { name: 'Send' })).toBeInTheDocument();
-  });
-
-  it('renders footer copyright', () => {
-    renderWithChakra(<Home />);
-    expect(screen.getByText(/©2025 JWShop/i)).toBeInTheDocument();
+    expect(screen.getByPlaceholderText('Enter your email')).toBeInTheDocument();
+    expect(screen.getByRole('button', { name: 'Subscribe' })).toBeInTheDocument();
   });
 
   // INTERACTIONS
   it('allows typing in the email input', async () => {
     renderWithChakra(<Home />);
-    const input = screen.getByPlaceholderText('Email') as HTMLInputElement;
+    const input = screen.getByPlaceholderText('Enter your email') as HTMLInputElement;
     await userEvent.type(input, 'test@example.com');
     expect(input.value).toBe('test@example.com');
   });
@@ -148,10 +143,10 @@ describe('Home component', () => {
     expect(viewBtn).toBeEnabled();
   });
 
-  it('clicks on footer send button', async () => {
+  it('clicks on footer subscribe button', async () => {
     renderWithChakra(<Home />);
-    const sendBtn = screen.getByRole('button', { name: 'Send' });
-    await userEvent.click(sendBtn);
-    expect(sendBtn).toBeEnabled();
+    const subscribeBtn = screen.getByRole('button', { name: 'Subscribe' });
+    await userEvent.click(subscribeBtn);
+    expect(subscribeBtn).toBeEnabled();
   });
 });

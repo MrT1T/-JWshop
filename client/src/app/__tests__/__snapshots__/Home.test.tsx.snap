@@ -3,409 +3,638 @@
 exports[`Home component renders correctly and matches snapshot 1`] = `
 <DocumentFragment>
   <div
-    class="css-0"
+    class="css-6b4w0n"
   >
-    <nav
-      class="css-68nz5l"
-    >
-      <h2
-        class="chakra-heading css-18j379d"
-      >
-        JWShop
-      </h2>
-      <button
-        aria-label="menu"
-        class="chakra-button css-1eja9f7"
-        type="button"
-      >
-        <span
-          aria-hidden="true"
-          class="css-1qead8w"
-          focusable="false"
-        />
-      </button>
-    </nav>
-    <section
-      class="css-1xbi1ju"
+    <div
+      class="css-1uwga29"
     >
       <div
-        class="chakra-stack css-r16oqz"
+        class="chakra-container css-11vl7h3"
+      >
+        <nav
+          class="css-144aaus"
+        >
+          <a
+            class="chakra-link css-4a6x12"
+            href="/"
+          >
+            <h2
+              class="chakra-heading css-o67t5v"
+            >
+              JWShop
+            </h2>
+          </a>
+          <div
+            class="chakra-stack css-16itcnq"
+          >
+            <a
+              class="chakra-link css-1xwaubb"
+              href="/"
+            >
+              Home
+            </a>
+            <a
+              class="chakra-link css-1xwaubb"
+              href="/about"
+            >
+              About
+            </a>
+            <a
+              class="chakra-link css-1xwaubb"
+              href="/blog"
+            >
+              Blog
+            </a>
+            <a
+              class="chakra-link css-1xwaubb"
+              href="/features"
+            >
+              Features
+            </a>
+            <a
+              class="chakra-link css-1xwaubb"
+              href="/contacts"
+            >
+              Contacts
+            </a>
+            <a
+              class="chakra-link css-11na6px"
+              href="/shop"
+            >
+              Shop
+            </a>
+          </div>
+          <div
+            class="chakra-stack css-1rafi8n"
+          >
+            <button
+              aria-label="Favorites"
+              class="chakra-button css-okm0kr"
+              type="button"
+            >
+              <svg
+                aria-hidden="true"
+                fill="none"
+                focusable="false"
+                height="18"
+                viewBox="0 0 18 18"
+                width="18"
+              >
+                <path
+                  d="M15.34 3.15C14.17 2.08 12.63 2.08 11.45 3.15L11 3.58L10.55 3.15C9.37 2.08 7.83 2.08 6.66 3.15C5.59 4.17 5 5.52 5 6.95C5 8.38 5.59 9.73 6.66 10.74L11 14.21L15.34 10.74C16.41 9.73 17 8.38 17 6.95C17 5.52 16.41 4.17 15.34 3.15Z"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                />
+              </svg>
+            </button>
+            <a
+              class="chakra-link css-4a6x12"
+              href="/checkout"
+            >
+              <div
+                class="css-79elbk"
+              >
+                <button
+                  aria-label="Shopping cart"
+                  class="chakra-button css-okm0kr"
+                  type="button"
+                >
+                  <svg
+                    aria-hidden="true"
+                    fill="none"
+                    focusable="false"
+                    height="18"
+                    viewBox="0 0 18 18"
+                    width="18"
+                  >
+                    <path
+                      d="M14.45 9.03L13.56 2.39C13.53 2.03 13.22 1.76 12.86 1.76H5.16C4.8 1.76 4.5 2.03 4.46 2.39L3.55 9.03C3.47 9.78 3.72 10.54 4.24 11.11C4.75 11.67 5.48 12 6.24 12H11.79C12.54 12 13.26 11.68 13.77 11.12C14.28 10.56 14.53 9.8 14.45 9.03Z"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                    />
+                    <path
+                      d="M7.13 1V3.03C7.13 3.58 6.68 4.03 6.13 4.03C5.58 4.03 5.13 3.58 5.13 3.03V1M12.85 1V3.03C12.85 3.58 12.4 4.03 11.85 4.03C11.3 4.03 10.85 3.58 10.85 3.03V1"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                    />
+                  </svg>
+                </button>
+                <span
+                  class="chakra-badge css-f0looy"
+                >
+                  3
+                </span>
+              </div>
+            </a>
+            <button
+              aria-label="User account"
+              class="chakra-button css-okm0kr"
+              type="button"
+            >
+              <svg
+                aria-hidden="true"
+                fill="none"
+                focusable="false"
+                height="18"
+                viewBox="0 0 18 18"
+                width="18"
+              >
+                <path
+                  d="M13.36 10.93C12.37 9.93 11.18 9.2 9.88 8.76C11.08 7.88 11.85 6.45 11.85 4.85C11.85 2.18 9.68 0 7 0C4.32 0 2.15 2.18 2.15 4.85C2.15 6.45 2.92 7.88 4.12 8.76C2.82 9.2 1.63 9.93 0.64 10.93C-1.06 12.63 -0.71 14.89 0.29 16.29L6.52 17.21C6.65 17.33 6.83 17.4 7 17.4C7.17 17.4 7.35 17.33 7.48 17.21L13.71 16.29C14.71 14.89 15.06 12.63 13.36 10.93Z"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                />
+              </svg>
+            </button>
+            <button
+              aria-label="Menu"
+              class="chakra-button css-fk74r7"
+              type="button"
+            >
+              <svg
+                aria-hidden="true"
+                class="chakra-icon css-onkibi"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M 3 5 A 1.0001 1.0001 0 1 0 3 7 L 21 7 A 1.0001 1.0001 0 1 0 21 5 L 3 5 z M 3 11 A 1.0001 1.0001 0 1 0 3 13 L 21 13 A 1.0001 1.0001 0 1 0 21 11 L 3 11 z M 3 17 A 1.0001 1.0001 0 1 0 3 19 L 21 19 A 1.0001 1.0001 0 1 0 21 17 L 3 17 z"
+                  fill="currentColor"
+                />
+              </svg>
+            </button>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <div
+      class="css-47kejj"
+    >
+      <div
+        class="chakra-container css-11vl7h3"
+      >
+        <section
+          class="css-zkgrew"
+        >
+          <div
+            class="chakra-stack css-6lnovw"
+          >
+            <h2
+              class="chakra-heading css-12gzgmm"
+            >
+              A Unique Watch That Fits Your Style
+            </h2>
+            <p
+              class="chakra-text css-ons5ec"
+            >
+              The new Lawson collection is already here! This quartz Lawson Franklin 38 model, designed with simplicity and elegance, is truly a cherry on the cake. Comes in different sizes and band colors, has a stainless steel back for a personalized engraving.
+            </p>
+            <div
+              class="chakra-stack css-yr5oa1"
+            >
+              <button
+                class="chakra-button css-11pi6vv"
+                type="button"
+              >
+                Learn More
+              </button>
+              <button
+                class="chakra-button css-1wdjfbj"
+                type="button"
+              >
+                View
+              </button>
+            </div>
+          </div>
+          <div
+            class="css-1t8hi50"
+          />
+        </section>
+      </div>
+    </div>
+    <div
+      class="css-vgu039"
+    >
+      <div
+        class="chakra-container css-11vl7h3"
+      >
+        <div
+          class="css-1ijhh2b"
+        >
+          <div
+            class="chakra-stack css-dpnoar"
+          >
+            <h2
+              class="chakra-heading css-1telf0v"
+            >
+              Ideal Has Never Been Closer
+            </h2>
+            <p
+              class="chakra-text css-1fevzpm"
+            >
+              Have you ever come across a thing that is impossible to resist? Meet the Lawson Jefferson 38! Run by the vibration of a quartz crystal (32,786 times per second) under current to keep possibly accurate time. You will feel absolutely over the moon with it, we guarantee!
+            </p>
+            <button
+              class="chakra-button css-1l6c48g"
+              type="button"
+            >
+              Learn More
+            </button>
+          </div>
+          <div
+            class="css-1g0vid6"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      class="css-1vn897a"
+    >
+      <div
+        class="chakra-container css-11vl7h3"
       >
         <h2
-          class="chakra-heading css-1jkx6l7"
+          class="chakra-heading css-6z9q5j"
         >
-          A Unique Watch That Fits Your Style
+          Our Bestsellers
         </h2>
-        <p
-          class="chakra-text css-lmq5r0"
-        >
-          The new Lawson collection is already here! This quartz Lawson Franklin 38 model, designed with simplicity and elegance, is truly a cherry on the cake. Comes in different sizes and band colors, has a stainless steel back for a personalized engraving.
-        </p>
         <div
-          class="chakra-stack css-1rafi8n"
+          class="css-11c4uiv"
+        >
+          <div
+            class="css-scocrv"
+          >
+            <div
+              class="css-c81t7s"
+            />
+            <div
+              class="css-r4358i"
+            >
+              <p
+                class="chakra-text css-1m8xmrz"
+              >
+                Gold chunky paperclip link chain
+              </p>
+              <p
+                class="chakra-text css-wjomy9"
+              >
+                19,00 £
+              </p>
+            </div>
+          </div>
+          <div
+            class="css-scocrv"
+          >
+            <div
+              class="css-c81t7s"
+            />
+            <div
+              class="css-r4358i"
+            >
+              <p
+                class="chakra-text css-1m8xmrz"
+              >
+                Sterling silver criss cross ring
+              </p>
+              <p
+                class="chakra-text css-wjomy9"
+              >
+                23,00 £
+              </p>
+            </div>
+          </div>
+          <div
+            class="css-scocrv"
+          >
+            <div
+              class="css-c81t7s"
+            />
+            <div
+              class="css-r4358i"
+            >
+              <p
+                class="chakra-text css-1m8xmrz"
+              >
+                Ear cuff with cubic zirconias
+              </p>
+              <p
+                class="chakra-text css-wjomy9"
+              >
+                8,00 £
+              </p>
+            </div>
+          </div>
+          <div
+            class="css-scocrv"
+          >
+            <div
+              class="css-c81t7s"
+            />
+            <div
+              class="css-r4358i"
+            >
+              <p
+                class="chakra-text css-1m8xmrz"
+              >
+                Set of two gold stacking layering necklaces
+              </p>
+              <p
+                class="chakra-text css-wjomy9"
+              />
+              <div
+                class="css-1k9efnl"
+              >
+                <span
+                  class="chakra-text css-dnv4fc"
+                >
+                  28,00 £
+                </span>
+                <span
+                  class="chakra-text css-19gpx6"
+                >
+                  -10%
+                </span>
+                <span
+                  class="chakra-text css-niwogb"
+                >
+                  26,00 £
+                </span>
+              </div>
+              <p />
+            </div>
+          </div>
+        </div>
+        <div
+          class="chakra-stack css-1c2p0ni"
         >
           <button
-            class="chakra-button css-yx4uu4"
+            class="chakra-button css-1pywa0d"
             type="button"
           >
-            Learn More
+            Show all
           </button>
           <button
-            class="chakra-button css-11494p6"
+            class="chakra-button css-11pi6vv"
             type="button"
           >
             View
           </button>
         </div>
       </div>
-      <div
-        class="css-9ir9wg"
-      />
-    </section>
+    </div>
     <div
-      class="css-shlefi"
+      class="css-vgu039"
     >
       <div
-        class="css-1rr4qq7"
+        class="chakra-container css-11vl7h3"
+      >
+        <div
+          class="css-zbydqo"
+        >
+          <div
+            class="chakra-stack css-dpnoar"
+          >
+            <h2
+              class="chakra-heading css-1telf0v"
+            >
+              Swiss Essence
+            </h2>
+            <p
+              class="chakra-text css-1fevzpm"
+            >
+              The first association that comes to one’s mind with the phrase “a good wristwatch” is naturally a one made somewhere in Switzerland. Do you want to know what makes Swiss watches stand out?
+            </p>
+            <button
+              class="chakra-button css-1l6c48g"
+              type="button"
+            >
+              Learn More
+            </button>
+          </div>
+          <div
+            class="css-1g0vid6"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      class="css-10q7ld9"
+    >
+      <div
+        class="chakra-container css-11vl7h3"
       >
         <h2
-          class="chakra-heading css-1jb3vzl"
+          class="chakra-heading css-6z9q5j"
         >
-          Ideal Has Never Been Closer
-        </h2>
-        <p
-          class="chakra-text css-1oaf60z"
-        >
-          Have you ever come across a thing that is impossible to resist? Meet the Lawson Jefferson 38! Run by the vibration of a quartz crystal (32,786 times per second) under current to keep possibly accurate time. You will feel absolutely over the moon with it, we guarantee!
-        </p>
-        <button
-          class="chakra-button css-m5allk"
-          type="button"
-        >
-          Learn More
-        </button>
-      </div>
-      <div
-        class="css-ragl8z"
-      />
-    </div>
-    <div
-      class="css-p1uhtt"
-    >
-      <h2
-        class="chakra-heading css-1dqx0r"
-      >
-        Our Bestsellers
-      </h2>
-      <div
-        class="css-166b8wq"
-      >
-        <div
-          class="css-lqv93g"
-        >
-          <div
-            class="css-1ybwlcx"
-          />
-          <p
-            class="chakra-text css-2ygcmq"
-          >
-            Gold chunky paperclip link chain
-          </p>
-          <p
-            class="chakra-text css-rkegih"
-          >
-            19,00 £
-          </p>
-        </div>
-        <div
-          class="css-lqv93g"
-        >
-          <div
-            class="css-1ybwlcx"
-          />
-          <p
-            class="chakra-text css-2ygcmq"
-          >
-            Sterling silver criss cross ring
-          </p>
-          <p
-            class="chakra-text css-rkegih"
-          >
-            23,00 £
-          </p>
-        </div>
-        <div
-          class="css-lqv93g"
-        >
-          <div
-            class="css-1ybwlcx"
-          />
-          <p
-            class="chakra-text css-2ygcmq"
-          >
-            Ear cuff with cubic zirconias
-          </p>
-          <p
-            class="chakra-text css-rkegih"
-          >
-            8,00 £
-          </p>
-        </div>
-        <div
-          class="css-lqv93g"
-        >
-          <div
-            class="css-1ybwlcx"
-          />
-          <p
-            class="chakra-text css-2ygcmq"
-          >
-            Set of two gold stacking layering necklaces
-          </p>
-          <p
-            class="chakra-text css-rkegih"
-          >
-            <span>
-              <span
-                class="chakra-text css-1l786tr"
-              >
-                28,00 £
-              </span>
-               
-              <span
-                class="chakra-text css-1nyyqq1"
-              >
-                -10%
-              </span>
-            </span>
-          </p>
-        </div>
-      </div>
-      <div
-        class="chakra-stack css-1lwkwzc"
-      >
-        <button
-          class="chakra-button css-11494p6"
-          type="button"
-        >
-          Show all
-        </button>
-        <button
-          class="chakra-button css-yx4uu4"
-          type="button"
-        >
-          View
-        </button>
-      </div>
-    </div>
-    <div
-      class="css-shlefi"
-    >
-      <div
-        class="css-1rr4qq7"
-      >
-        <h2
-          class="chakra-heading css-1jb3vzl"
-        >
-          Swiss Essence
-        </h2>
-        <p
-          class="chakra-text css-1oaf60z"
-        >
-          The first association that comes to one’s mind with the phrase “a good wristwatch” is naturally a one made somewhere in Switzerland. Do you want to know what makes Swiss watches stand out?
-        </p>
-        <button
-          class="chakra-button css-m5allk"
-          type="button"
-        >
-          Learn More
-        </button>
-      </div>
-      <div
-        class="css-ragl8z"
-      />
-    </div>
-    <div
-      class="css-p1uhtt"
-    >
-      <h2
-        class="chakra-heading css-q2ryjt"
-      >
-        Journal & Blog
-      </h2>
-      <div
-        class="css-1lrbmh9"
-      >
-        <div
-          class="css-1pkif8"
-        >
-          <div
-            class="css-15md1o9"
-          />
-          <div
-            class="css-h94677"
-          >
-            <p
-              class="chakra-text css-89mcmc"
-            >
-              26.08.2020
-            </p>
-            <p
-              class="chakra-text css-1xiet3t"
-            >
-              What Are the Types of Watch Movements?
-            </p>
-          </div>
-        </div>
-        <div
-          class="css-1pkif8"
-        >
-          <div
-            class="css-15md1o9"
-          />
-          <div
-            class="css-h94677"
-          >
-            <p
-              class="chakra-text css-89mcmc"
-            >
-              26.08.2020
-            </p>
-            <p
-              class="chakra-text css-1xiet3t"
-            >
-              What Are the Types of Watch Movements?
-            </p>
-          </div>
-        </div>
-        <div
-          class="css-1pkif8"
-        >
-          <div
-            class="css-15md1o9"
-          />
-          <div
-            class="css-h94677"
-          >
-            <p
-              class="chakra-text css-89mcmc"
-            >
-              26.08.2020
-            </p>
-            <p
-              class="chakra-text css-1xiet3t"
-            >
-              What Are the Types of Watch Movements?
-            </p>
-          </div>
-        </div>
-      </div>
-      <button
-        class="chakra-button css-f0oymr"
-        type="button"
-      >
-        Read more
-      </button>
-    </div>
-    <footer
-      class="css-197ee03"
-    >
-      <div
-        class="css-10b72bd"
-      >
-        <h2
-          class="chakra-heading css-9f6g39"
-        >
-          JWShop
+          Journal & Blog
         </h2>
         <div
-          class="chakra-stack css-1y6oau7"
+          class="css-1n1gy0j"
         >
-          <a
-            class="chakra-link css-spn4bz"
-          >
-            Home
-          </a>
-          <a
-            class="chakra-link css-spn4bz"
-          >
-            About
-          </a>
-          <a
-            class="chakra-link css-spn4bz"
-          >
-            Blog
-          </a>
-          <a
-            class="chakra-link css-spn4bz"
-          >
-            Shop
-          </a>
-          <a
-            class="chakra-link css-spn4bz"
-          >
-            Features
-          </a>
-          <a
-            class="chakra-link css-spn4bz"
-          >
-            Contacts
-          </a>
-          <a
-            class="chakra-link css-spn4bz"
-          >
-            Instant Quote
-          </a>
-        </div>
-        <div
-          class="css-17xejub"
-        />
-        <div
-          class="css-f1ngf7"
-        >
-          <p
-            class="chakra-text css-bxak8j"
-          >
-            Lorem ipsum dolor sit amet
-          </p>
           <div
-            class="chakra-input__group css-1y0e7gb"
-            data-group="true"
+            class="css-1khvcvn"
           >
-            <input
-              class="chakra-input css-10dip6r"
-              placeholder="Email"
+            <div
+              class="css-1p16cf6"
             />
             <div
-              class="chakra-input__right-element css-1a77a2i"
+              class="css-rmlqu9"
             >
-              <button
-                class="chakra-button css-se4pb5"
-                type="button"
+              <p
+                class="chakra-text css-mspf89"
               >
-                Send
-              </button>
+                26.08.2020
+              </p>
+              <p
+                class="chakra-text css-b24wyp"
+              >
+                What Are the Types of Watch Movements?
+              </p>
+            </div>
+          </div>
+          <div
+            class="css-1khvcvn"
+          >
+            <div
+              class="css-1p16cf6"
+            />
+            <div
+              class="css-rmlqu9"
+            >
+              <p
+                class="chakra-text css-mspf89"
+              >
+                26.08.2020
+              </p>
+              <p
+                class="chakra-text css-b24wyp"
+              >
+                What Are the Types of Watch Movements?
+              </p>
+            </div>
+          </div>
+          <div
+            class="css-1khvcvn"
+          >
+            <div
+              class="css-1p16cf6"
+            />
+            <div
+              class="css-rmlqu9"
+            >
+              <p
+                class="chakra-text css-mspf89"
+              >
+                26.08.2020
+              </p>
+              <p
+                class="chakra-text css-b24wyp"
+              >
+                What Are the Types of Watch Movements?
+              </p>
             </div>
           </div>
         </div>
+        <button
+          class="chakra-button css-idmvf9"
+          type="button"
+        >
+          Read more →
+        </button>
       </div>
-      <hr
-        aria-orientation="horizontal"
-        class="chakra-divider css-rnrgf4"
-      />
+    </div>
+    <footer
+      class="css-qdyq4i"
+    >
       <div
-        class="css-bqcamu"
+        class="chakra-container css-11vl7h3"
       >
-        <p
-          class="chakra-text css-0"
+        <div
+          class="css-6xylhh"
         >
-          ©2025 JWShop
-        </p>
-        <p
-          class="chakra-text css-0"
+          <div
+            class="css-1rr4qq7"
+          >
+            <h2
+              class="chakra-heading css-hjn2at"
+            >
+              JWShop
+            </h2>
+          </div>
+          <div
+            class="chakra-stack css-1fiohxh"
+          >
+            <a
+              class="chakra-link css-1a4de1x"
+            >
+              Home
+            </a>
+            <a
+              class="chakra-link css-1a4de1x"
+            >
+              About
+            </a>
+            <a
+              class="chakra-link css-1a4de1x"
+            >
+              Blog
+            </a>
+            <a
+              class="chakra-link css-1a4de1x"
+            >
+              Shop
+            </a>
+            <a
+              class="chakra-link css-1a4de1x"
+            >
+              Features
+            </a>
+            <a
+              class="chakra-link css-1a4de1x"
+            >
+              Contacts
+            </a>
+            <a
+              class="chakra-link css-1a4de1x"
+            >
+              Instant Quote
+            </a>
+          </div>
+          <div
+            class="css-mkpwg2"
+          >
+            <p
+              class="chakra-text css-10yi2ax"
+            >
+              Subscribe to our newsletter
+            </p>
+            <div
+              class="chakra-input__group css-1y0e7gb"
+              data-group="true"
+            >
+              <input
+                class="chakra-input css-a5kdp8"
+                placeholder="Enter your email"
+              />
+              <div
+                class="chakra-input__right-element css-yo2dg"
+              >
+                <button
+                  class="chakra-button css-1av36fq"
+                  type="button"
+                >
+                  Subscribe
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr
+          aria-orientation="horizontal"
+          class="chakra-divider css-1e6gg7n"
+        />
+        <div
+          class="css-5vgdtj"
         >
-          Home · About · Blog · Shop · Features · Contacts · Instant Quote
-        </p>
+          <p
+            class="chakra-text css-0"
+          >
+            © 2025 JWShop. All rights reserved.
+          </p>
+          <div
+            class="chakra-stack css-rzkssc"
+          >
+            <a
+              class="chakra-link css-1fwsdwn"
+            >
+              Privacy Policy
+            </a>
+            <p
+              class="chakra-text css-0"
+            >
+              ·
+            </p>
+            <a
+              class="chakra-link css-1fwsdwn"
+            >
+              Terms of Service
+            </a>
+            <p
+              class="chakra-text css-0"
+            >
+              ·
+            </p>
+            <a
+              class="chakra-link css-1fwsdwn"
+            >
+              Contact Us
+            </a>
+          </div>
+        </div>
       </div>
     </footer>
   </div>

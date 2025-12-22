@@ -1,0 +1,663 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`CheckoutPage component renders correctly and matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="css-1uwga29"
+  >
+    <div
+      class="chakra-container css-11vl7h3"
+    >
+      <nav
+        class="css-144aaus"
+      >
+        <a
+          class="chakra-link css-4a6x12"
+          href="/"
+        >
+          <h2
+            class="chakra-heading css-o67t5v"
+          >
+            JWShop
+          </h2>
+        </a>
+        <div
+          class="chakra-stack css-16itcnq"
+        >
+          <a
+            class="chakra-link css-1xwaubb"
+            href="/"
+          >
+            Home
+          </a>
+          <a
+            class="chakra-link css-1xwaubb"
+            href="/about"
+          >
+            About
+          </a>
+          <a
+            class="chakra-link css-1xwaubb"
+            href="/blog"
+          >
+            Blog
+          </a>
+          <a
+            class="chakra-link css-1xwaubb"
+            href="/features"
+          >
+            Features
+          </a>
+          <a
+            class="chakra-link css-1xwaubb"
+            href="/contacts"
+          >
+            Contacts
+          </a>
+          <a
+            class="chakra-link css-11na6px"
+            href="/shop"
+          >
+            Shop
+          </a>
+        </div>
+        <div
+          class="chakra-stack css-1rafi8n"
+        >
+          <button
+            aria-label="Favorites"
+            class="chakra-button css-okm0kr"
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              fill="none"
+              focusable="false"
+              height="18"
+              viewBox="0 0 18 18"
+              width="18"
+            >
+              <path
+                d="M15.34 3.15C14.17 2.08 12.63 2.08 11.45 3.15L11 3.58L10.55 3.15C9.37 2.08 7.83 2.08 6.66 3.15C5.59 4.17 5 5.52 5 6.95C5 8.38 5.59 9.73 6.66 10.74L11 14.21L15.34 10.74C16.41 9.73 17 8.38 17 6.95C17 5.52 16.41 4.17 15.34 3.15Z"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+              />
+            </svg>
+          </button>
+          <a
+            class="chakra-link css-4a6x12"
+            href="/checkout"
+          >
+            <div
+              class="css-79elbk"
+            >
+              <button
+                aria-label="Shopping cart"
+                class="chakra-button css-okm0kr"
+                type="button"
+              >
+                <svg
+                  aria-hidden="true"
+                  fill="none"
+                  focusable="false"
+                  height="18"
+                  viewBox="0 0 18 18"
+                  width="18"
+                >
+                  <path
+                    d="M14.45 9.03L13.56 2.39C13.53 2.03 13.22 1.76 12.86 1.76H5.16C4.8 1.76 4.5 2.03 4.46 2.39L3.55 9.03C3.47 9.78 3.72 10.54 4.24 11.11C4.75 11.67 5.48 12 6.24 12H11.79C12.54 12 13.26 11.68 13.77 11.12C14.28 10.56 14.53 9.8 14.45 9.03Z"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                  />
+                  <path
+                    d="M7.13 1V3.03C7.13 3.58 6.68 4.03 6.13 4.03C5.58 4.03 5.13 3.58 5.13 3.03V1M12.85 1V3.03C12.85 3.58 12.4 4.03 11.85 4.03C11.3 4.03 10.85 3.58 10.85 3.03V1"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                  />
+                </svg>
+              </button>
+              <span
+                class="chakra-badge css-f0looy"
+              >
+                3
+              </span>
+            </div>
+          </a>
+          <button
+            aria-label="User account"
+            class="chakra-button css-okm0kr"
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              fill="none"
+              focusable="false"
+              height="18"
+              viewBox="0 0 18 18"
+              width="18"
+            >
+              <path
+                d="M13.36 10.93C12.37 9.93 11.18 9.2 9.88 8.76C11.08 7.88 11.85 6.45 11.85 4.85C11.85 2.18 9.68 0 7 0C4.32 0 2.15 2.18 2.15 4.85C2.15 6.45 2.92 7.88 4.12 8.76C2.82 9.2 1.63 9.93 0.64 10.93C-1.06 12.63 -0.71 14.89 0.29 16.29L6.52 17.21C6.65 17.33 6.83 17.4 7 17.4C7.17 17.4 7.35 17.33 7.48 17.21L13.71 16.29C14.71 14.89 15.06 12.63 13.36 10.93Z"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+              />
+            </svg>
+          </button>
+          <button
+            aria-label="Menu"
+            class="chakra-button css-fk74r7"
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              class="chakra-icon css-onkibi"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M 3 5 A 1.0001 1.0001 0 1 0 3 7 L 21 7 A 1.0001 1.0001 0 1 0 21 5 L 3 5 z M 3 11 A 1.0001 1.0001 0 1 0 3 13 L 21 13 A 1.0001 1.0001 0 1 0 21 11 L 3 11 z M 3 17 A 1.0001 1.0001 0 1 0 3 19 L 21 19 A 1.0001 1.0001 0 1 0 21 17 L 3 17 z"
+                fill="currentColor"
+              />
+            </svg>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </div>
+  <div
+    class="css-lkqqce"
+  >
+    <div
+      class="chakra-container css-11vl7h3"
+    >
+      <h2
+        class="chakra-heading css-1m8a4ht"
+      >
+        Billing details
+      </h2>
+      <p
+        class="chakra-text css-em096t"
+      >
+        Ship to different address?
+      </p>
+      <div
+        class="css-cqxv5n"
+      >
+        <div
+          class="css-0"
+        >
+          <div
+            class="chakra-stack css-42ki38"
+          >
+            <div
+              class="css-wclpxa"
+            >
+              <div
+                class="chakra-form-control css-1kxonj9"
+                role="group"
+              >
+                <label
+                  class="chakra-form__label css-1gib1w2"
+                  for="field-«r0»"
+                  id="field-«r0»-label"
+                >
+                  First Name*
+                </label>
+                <input
+                  class="chakra-input css-1cjy4zv"
+                  id="field-«r0»"
+                  placeholder="First name"
+                />
+              </div>
+              <div
+                class="chakra-form-control css-1kxonj9"
+                role="group"
+              >
+                <label
+                  class="chakra-form__label css-1gib1w2"
+                  for="field-«r1»"
+                  id="field-«r1»-label"
+                >
+                  Last Name*
+                </label>
+                <input
+                  class="chakra-input css-1cjy4zv"
+                  id="field-«r1»"
+                  placeholder="Last name"
+                />
+              </div>
+            </div>
+            <div
+              class="chakra-form-control css-1kxonj9"
+              role="group"
+            >
+              <label
+                class="chakra-form__label css-1gib1w2"
+                for="field-«r2»"
+                id="field-«r2»-label"
+              >
+                Company Name (Optional)
+              </label>
+              <input
+                class="chakra-input css-1cjy4zv"
+                id="field-«r2»"
+                placeholder="Company name"
+              />
+            </div>
+            <div
+              class="chakra-form-control css-1kxonj9"
+              role="group"
+            >
+              <label
+                class="chakra-form__label css-1gib1w2"
+                for="field-«r3»"
+                id="field-«r3»-label"
+              >
+                Country / Region*
+              </label>
+              <div
+                class="chakra-select__wrapper css-42b2qy"
+              >
+                <select
+                  class="chakra-select css-161pkch"
+                  id="field-«r3»"
+                >
+                  <option
+                    value=""
+                  >
+                    Select a country / region
+                  </option>
+                  <option
+                    value="us"
+                  >
+                    United States
+                  </option>
+                  <option
+                    value="uk"
+                  >
+                    United Kingdom
+                  </option>
+                  <option
+                    value="ca"
+                  >
+                    Canada
+                  </option>
+                </select>
+                <div
+                  class="chakra-select__icon-wrapper css-iohxn1"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="chakra-select__icon"
+                    focusable="false"
+                    role="presentation"
+                    style="width: 1em; height: 1em; color: currentcolor;"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div
+              class="chakra-form-control css-1kxonj9"
+              role="group"
+            >
+              <label
+                class="chakra-form__label css-1gib1w2"
+                for="field-«r4»"
+                id="field-«r4»-label"
+              >
+                Street Address*
+              </label>
+              <input
+                class="chakra-input css-c51tnq"
+                id="field-«r4»"
+                placeholder="House number and street name"
+              />
+              <input
+                class="chakra-input css-1cjy4zv"
+                id="field-«r4»"
+                placeholder="Apartment, suite, unit etc. (optional)"
+              />
+            </div>
+            <div
+              class="chakra-form-control css-1kxonj9"
+              role="group"
+            >
+              <label
+                class="chakra-form__label css-1gib1w2"
+                for="field-«r5»"
+                id="field-«r5»-label"
+              >
+                Town / City*
+              </label>
+              <input
+                class="chakra-input css-1cjy4zv"
+                id="field-«r5»"
+                placeholder="Town / City"
+              />
+            </div>
+            <div
+              class="chakra-form-control css-1kxonj9"
+              role="group"
+            >
+              <label
+                class="chakra-form__label css-1gib1w2"
+                for="field-«r6»"
+                id="field-«r6»-label"
+              >
+                State*
+              </label>
+              <div
+                class="chakra-select__wrapper css-42b2qy"
+              >
+                <select
+                  class="chakra-select css-161pkch"
+                  id="field-«r6»"
+                >
+                  <option
+                    value=""
+                  >
+                    Select a state
+                  </option>
+                  <option
+                    value="ny"
+                  >
+                    New York
+                  </option>
+                  <option
+                    value="ca"
+                  >
+                    California
+                  </option>
+                  <option
+                    value="tx"
+                  >
+                    Texas
+                  </option>
+                </select>
+                <div
+                  class="chakra-select__icon-wrapper css-iohxn1"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="chakra-select__icon"
+                    focusable="false"
+                    role="presentation"
+                    style="width: 1em; height: 1em; color: currentcolor;"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div
+              class="chakra-form-control css-1kxonj9"
+              role="group"
+            >
+              <label
+                class="chakra-form__label css-1gib1w2"
+                for="field-«r7»"
+                id="field-«r7»-label"
+              >
+                ZIP Code*
+              </label>
+              <input
+                class="chakra-input css-1cjy4zv"
+                id="field-«r7»"
+                placeholder="ZIP Code"
+              />
+            </div>
+            <div
+              class="chakra-form-control css-1kxonj9"
+              role="group"
+            >
+              <label
+                class="chakra-form__label css-1gib1w2"
+                for="field-«r8»"
+                id="field-«r8»-label"
+              >
+                Phone*
+              </label>
+              <input
+                class="chakra-input css-1cjy4zv"
+                id="field-«r8»"
+                placeholder="Phone"
+                type="tel"
+              />
+            </div>
+            <div
+              class="chakra-form-control css-1kxonj9"
+              role="group"
+            >
+              <label
+                class="chakra-form__label css-1gib1w2"
+                for="field-«r9»"
+                id="field-«r9»-label"
+              >
+                Email Address*
+              </label>
+              <input
+                class="chakra-input css-1cjy4zv"
+                id="field-«r9»"
+                placeholder="Email address"
+                type="email"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          class="css-0"
+        >
+          <div
+            class="css-e0jtbg"
+          >
+            <h2
+              class="chakra-heading css-1k3itok"
+            >
+              Your order
+            </h2>
+            <div
+              class="chakra-stack css-1cyyl4u"
+            >
+              <div
+                class="chakra-stack css-1y3f6ad"
+              >
+                <div
+                  class="chakra-stack css-8pmr8q"
+                >
+                  <div
+                    class="css-1r13o2l"
+                  />
+                  <div
+                    class="chakra-stack css-mw8ufx"
+                  >
+                    <p
+                      class="chakra-text css-1krxe8n"
+                    >
+                      Gold Necklace
+                    </p>
+                    <p
+                      class="chakra-text css-1nyfskl"
+                    >
+                      Qty: 1
+                    </p>
+                  </div>
+                </div>
+                <p
+                  class="chakra-text css-1krxe8n"
+                >
+                  $450
+                </p>
+              </div>
+              <div
+                class="chakra-stack css-1y3f6ad"
+              >
+                <div
+                  class="chakra-stack css-8pmr8q"
+                >
+                  <div
+                    class="css-1r13o2l"
+                  />
+                  <div
+                    class="chakra-stack css-mw8ufx"
+                  >
+                    <p
+                      class="chakra-text css-1krxe8n"
+                    >
+                      Diamond Earrings
+                    </p>
+                    <p
+                      class="chakra-text css-1nyfskl"
+                    >
+                      Qty: 1
+                    </p>
+                  </div>
+                </div>
+                <p
+                  class="chakra-text css-1krxe8n"
+                >
+                  $650
+                </p>
+              </div>
+              <div
+                class="chakra-stack css-1y3f6ad"
+              >
+                <div
+                  class="chakra-stack css-8pmr8q"
+                >
+                  <div
+                    class="css-1r13o2l"
+                  />
+                  <div
+                    class="chakra-stack css-mw8ufx"
+                  >
+                    <p
+                      class="chakra-text css-1krxe8n"
+                    >
+                      Pearl Bracelet
+                    </p>
+                    <p
+                      class="chakra-text css-1nyfskl"
+                    >
+                      Qty: 1
+                    </p>
+                  </div>
+                </div>
+                <p
+                  class="chakra-text css-1krxe8n"
+                >
+                  $280
+                </p>
+              </div>
+              <hr
+                aria-orientation="horizontal"
+                class="chakra-divider css-6pmtuj"
+              />
+              <div
+                class="chakra-stack css-1y3f6ad"
+              >
+                <p
+                  class="chakra-text css-itvw0n"
+                >
+                  Subtotal
+                </p>
+                <p
+                  class="chakra-text css-1krxe8n"
+                >
+                  $1380
+                </p>
+              </div>
+              <div
+                class="chakra-stack css-1y3f6ad"
+              >
+                <p
+                  class="chakra-text css-itvw0n"
+                >
+                  Shipping
+                </p>
+                <p
+                  class="chakra-text css-12mzhcn"
+                >
+                  Free
+                </p>
+              </div>
+              <hr
+                aria-orientation="horizontal"
+                class="chakra-divider css-6pmtuj"
+              />
+              <div
+                class="chakra-stack css-1y3f6ad"
+              >
+                <p
+                  class="chakra-text css-1qec887"
+                >
+                  Total
+                </p>
+                <p
+                  class="chakra-text css-1w22u75"
+                >
+                  $1380
+                </p>
+              </div>
+              <hr
+                aria-orientation="horizontal"
+                class="chakra-divider css-6pmtuj"
+              />
+              <div
+                class="chakra-stack css-y8whdb"
+              >
+                <p
+                  class="chakra-text css-1krxe8n"
+                >
+                  Payment Method
+                </p>
+                <div
+                  class="css-5qlld"
+                >
+                  <p
+                    class="chakra-text css-itvw0n"
+                  >
+                    Cash on delivery
+                  </p>
+                </div>
+                <div
+                  class="css-neh2qf"
+                >
+                  <p
+                    class="chakra-text css-itvw0n"
+                  >
+                    PayPal
+                  </p>
+                </div>
+              </div>
+              <button
+                class="chakra-button css-pzvh4h"
+                type="button"
+              >
+                Place order
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <span
+    hidden=""
+    id="__chakra_env"
+  />
+</DocumentFragment>
+`;
