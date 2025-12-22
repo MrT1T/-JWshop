@@ -15,87 +15,9 @@ import {
   InputGroup,
   InputRightElement,
   Divider,
-  IconButton,
   Container,
-  useBreakpointValue,
 } from '@chakra-ui/react';
-import { HamburgerIcon } from '@chakra-ui/icons';
-
-const Nav: React.FC = () => {
-  const isMobile = useBreakpointValue({ base: true, md: false });
-
-  return (
-    <Box bg="white" borderBottom="1px" borderColor="gray.100">
-      <Container maxW="container.xl">
-        <Flex as="nav" align="center" justify="space-between" py={4}>
-          <Heading size="lg" fontWeight="bold" letterSpacing="tight">
-            JWShop
-          </Heading>
-
-          {!isMobile ? (
-            <HStack spacing={8}>
-              <Link
-                fontSize="sm"
-                fontWeight="medium"
-                _hover={{ color: 'gray.600' }}
-              >
-                Home
-              </Link>
-              <Link
-                fontSize="sm"
-                fontWeight="medium"
-                _hover={{ color: 'gray.600' }}
-              >
-                About
-              </Link>
-              <Link
-                fontSize="sm"
-                fontWeight="medium"
-                _hover={{ color: 'gray.600' }}
-              >
-                Blog
-              </Link>
-              <Link
-                fontSize="sm"
-                fontWeight="medium"
-                _hover={{ color: 'gray.600' }}
-              >
-                Shop
-              </Link>
-              <Link
-                fontSize="sm"
-                fontWeight="medium"
-                _hover={{ color: 'gray.600' }}
-              >
-                Features
-              </Link>
-              <Link
-                fontSize="sm"
-                fontWeight="medium"
-                _hover={{ color: 'gray.600' }}
-              >
-                Contacts
-              </Link>
-              <Link
-                fontSize="sm"
-                fontWeight="medium"
-                _hover={{ color: 'gray.600' }}
-              >
-                Instant Quote
-              </Link>
-            </HStack>
-          ) : (
-            <IconButton
-              aria-label="menu"
-              icon={<HamburgerIcon />}
-              variant="ghost"
-            />
-          )}
-        </Flex>
-      </Container>
-    </Box>
-  );
-};
+import Header from '@/components/Header';
 
 const Hero: React.FC = () => {
   return (
@@ -448,7 +370,7 @@ const Footer: React.FC = () => {
 const Home: React.FC = () => {
   return (
     <Box minH="100vh" bg="white">
-      <Nav />
+      <Header />
       <Hero />
 
       <SplitSection
