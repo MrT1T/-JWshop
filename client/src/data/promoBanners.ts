@@ -1,6 +1,7 @@
 import React from 'react';
 import PromoBanner from '@/components/PromoBanner';
 import WinterSale from '@/components/PromoBanner/Promos/WinterSale';
+import ValentinesDay from '@/components/PromoBanner/Promos/ValentinesDay';
 
 export interface PromoBannerConfig {
   id: string;
@@ -22,6 +23,12 @@ export const promoBanners: PromoBannerConfig[] = [
     id: 'winter-sale',
     component: WinterSale,
     isActive: true,
+    priority: 1,
+  },
+  {
+    id: 'valentines-day',
+    component: ValentinesDay,
+    isActive: false,
     priority: 1,
   },
 ];
