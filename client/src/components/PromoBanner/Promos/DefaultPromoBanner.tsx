@@ -21,7 +21,7 @@ const TimeUnit: React.FC<{ timeUnit: string | number }> = ({ timeUnit }) => (
 
 const DefaultPromoBanner = () => {
   const targetDate = useMemo(
-    () => new Date(new Date().getTime() + 9000000),
+    () => new Date(new Date().getTime() + 90000000),
     [],
   );
 
@@ -60,19 +60,11 @@ const DefaultPromoBanner = () => {
               fontSize: '2rem',
               lineHeight: '2.5rem',
               fontWeight: 700,
-              color: 'neutral.0',
+              color: 'white',
               pr: '0.75rem',
             }}
           >
-            LIMITED TIME{' '}
-            <Text
-              as="span"
-              sx={{
-                color: 'system.discount_purple_2',
-              }}
-            >
-              SALE
-            </Text>
+            LIMITED TIME <Text as="span">SALE</Text>
           </Text>
           <Flex
             sx={{
@@ -80,10 +72,7 @@ const DefaultPromoBanner = () => {
               h: '5rem',
             }}
           >
-            <DiscountSticker
-              bgColor="system.discount_purple_2"
-              textColor="white"
-            />
+            <DiscountSticker bgColor="red" textColor="white" />
           </Flex>
           <Flex
             flexDir="column"
@@ -101,18 +90,10 @@ const DefaultPromoBanner = () => {
                 fontSize: '1rem',
                 lineHeight: '1.5rem',
                 fontWeight: 700,
-                color: 'neutral.0',
+                color: 'white',
               }}
             >
-              LIMITED TIME{' '}
-              <Text
-                as="span"
-                sx={{
-                  color: 'system.discount_purple_2',
-                }}
-              >
-                SALE
-              </Text>
+              LIMITED TIME <Text as="span">SALE</Text>
             </Text>
             <Flex>
               <TimeUnit timeUnit={formatNumberToDwoDigits(hours)} />
@@ -150,10 +131,7 @@ const DefaultPromoBanner = () => {
             }}
             mr="12px"
           >
-            <DiscountSticker
-              bgColor="system.discount_purple_2"
-              textColor="white"
-            />
+            <DiscountSticker bgColor="red" textColor="white" />
           </Flex>
         </Flex>
       </Box>
