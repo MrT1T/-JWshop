@@ -20,18 +20,59 @@ import {
 } from '@chakra-ui/react';
 import { SearchIcon } from '@chakra-ui/icons';
 import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 import { PromoBannerManager } from '@/components/PromoBanner';
 
 // Mock data for products
 const products = [
-  { id: 1, name: 'Product 1', price: 99.99, image: 'https://via.placeholder.com/300' },
-  { id: 2, name: 'Product 2', price: 149.99, image: 'https://via.placeholder.com/300' },
-  { id: 3, name: 'Product 3', price: 79.99, image: 'https://via.placeholder.com/300' },
-  { id: 4, name: 'Product 4', price: 199.99, image: 'https://via.placeholder.com/300' },
-  { id: 5, name: 'Product 5', price: 89.99, image: 'https://via.placeholder.com/300' },
-  { id: 6, name: 'Product 6', price: 129.99, image: 'https://via.placeholder.com/300' },
-  { id: 7, name: 'Product 7', price: 159.99, image: 'https://via.placeholder.com/300' },
-  { id: 8, name: 'Product 8', price: 119.99, image: 'https://via.placeholder.com/300' },
+  {
+    id: 1,
+    name: 'Product 1',
+    price: 99.99,
+    image: 'https://via.placeholder.com/300',
+  },
+  {
+    id: 2,
+    name: 'Product 2',
+    price: 149.99,
+    image: 'https://via.placeholder.com/300',
+  },
+  {
+    id: 3,
+    name: 'Product 3',
+    price: 79.99,
+    image: 'https://via.placeholder.com/300',
+  },
+  {
+    id: 4,
+    name: 'Product 4',
+    price: 199.99,
+    image: 'https://via.placeholder.com/300',
+  },
+  {
+    id: 5,
+    name: 'Product 5',
+    price: 89.99,
+    image: 'https://via.placeholder.com/300',
+  },
+  {
+    id: 6,
+    name: 'Product 6',
+    price: 129.99,
+    image: 'https://via.placeholder.com/300',
+  },
+  {
+    id: 7,
+    name: 'Product 7',
+    price: 159.99,
+    image: 'https://via.placeholder.com/300',
+  },
+  {
+    id: 8,
+    name: 'Product 8',
+    price: 119.99,
+    image: 'https://via.placeholder.com/300',
+  },
 ];
 
 const categories = [
@@ -48,7 +89,7 @@ const ShopPage: React.FC = () => {
     <Box bg="white" minH="100vh">
       {/* Promo Banner */}
       <PromoBannerManager />
-      
+
       {/* Header */}
       <Header />
 
@@ -181,6 +222,8 @@ const ShopPage: React.FC = () => {
           ))}
         </SimpleGrid>
       </Container>
+
+      <Footer />
     </Box>
   );
 };

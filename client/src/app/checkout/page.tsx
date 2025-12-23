@@ -18,6 +18,7 @@ import {
   Divider,
 } from '@chakra-ui/react';
 import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 import { PromoBannerManager } from '@/components/PromoBanner';
 
 interface CartItem {
@@ -252,6 +253,7 @@ const CheckoutPage: React.FC = () => {
           </Grid>
         </Container>
       </Box>
+      <Footer />
     </>
   );
 };

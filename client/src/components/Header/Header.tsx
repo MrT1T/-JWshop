@@ -13,8 +13,10 @@ import {
 } from '@chakra-ui/react';
 import { HamburgerIcon } from '@chakra-ui/icons';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
 const Header: React.FC = () => {
+  const pathname = usePathname();
   return (
     <Box borderBottom="1px" borderColor="gray.200" bg="white">
       <Container maxW="container.xl">
@@ -31,35 +33,60 @@ const Header: React.FC = () => {
           {/* Desktop Navigation */}
           <HStack spacing={8} display={{ base: 'none', md: 'flex' }}>
             <Link href="/" passHref legacyBehavior>
-              <ChakraLink fontSize="sm" _hover={{ color: 'salmon' }}>
+              <ChakraLink
+                fontSize="sm"
+                fontWeight={pathname === '/' ? 'medium' : 'normal'}
+                color={pathname === '/' ? 'salmon' : 'inherit'}
+                _hover={{ color: 'salmon' }}
+              >
                 Home
               </ChakraLink>
             </Link>
             <Link href="/about" passHref legacyBehavior>
-              <ChakraLink fontSize="sm" _hover={{ color: 'salmon' }}>
+              <ChakraLink
+                fontSize="sm"
+                fontWeight={pathname === '/about' ? 'medium' : 'normal'}
+                color={pathname === '/about' ? 'salmon' : 'inherit'}
+                _hover={{ color: 'salmon' }}
+              >
                 About
               </ChakraLink>
             </Link>
             <Link href="/blog" passHref legacyBehavior>
-              <ChakraLink fontSize="sm" _hover={{ color: 'salmon' }}>
+              <ChakraLink
+                fontSize="sm"
+                fontWeight={pathname === '/blog' ? 'medium' : 'normal'}
+                color={pathname === '/blog' ? 'salmon' : 'inherit'}
+                _hover={{ color: 'salmon' }}
+              >
                 Blog
               </ChakraLink>
             </Link>
             <Link href="/features" passHref legacyBehavior>
-              <ChakraLink fontSize="sm" _hover={{ color: 'salmon' }}>
+              <ChakraLink
+                fontSize="sm"
+                fontWeight={pathname === '/features' ? 'medium' : 'normal'}
+                color={pathname === '/features' ? 'salmon' : 'inherit'}
+                _hover={{ color: 'salmon' }}
+              >
                 Features
               </ChakraLink>
             </Link>
             <Link href="/contacts" passHref legacyBehavior>
-              <ChakraLink fontSize="sm" _hover={{ color: 'salmon' }}>
+              <ChakraLink
+                fontSize="sm"
+                fontWeight={pathname === '/contacts' ? 'medium' : 'normal'}
+                color={pathname === '/contacts' ? 'salmon' : 'inherit'}
+                _hover={{ color: 'salmon' }}
+              >
                 Contacts
               </ChakraLink>
             </Link>
             <Link href="/shop" passHref legacyBehavior>
               <ChakraLink
                 fontSize="sm"
-                fontWeight="medium"
-                color="salmon"
+                fontWeight={pathname === '/shop' ? 'medium' : 'normal'}
+                color={pathname === '/shop' ? 'salmon' : 'inherit'}
                 _hover={{ color: 'salmon' }}
               >
                 Shop
