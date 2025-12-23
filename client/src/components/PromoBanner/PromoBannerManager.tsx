@@ -4,7 +4,6 @@ import React from 'react';
 import { promoBanners } from '@/data/promoBanners';
 
 const PromoBannerManager: React.FC = () => {
-
   // Get active banner with highest priority
   const activeBanner = promoBanners
     .filter((banner) => banner.isActive)
