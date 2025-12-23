@@ -4,6 +4,15 @@ import userEvent from '@testing-library/user-event';
 import { ChakraProvider } from '@chakra-ui/react';
 import ShopPage from '../shop/page';
 
+// Mock useCountdown to return fixed values
+jest.mock('../../components/PromoBanner/hooks/useCountdown', () => ({
+  useCountdown: () => ({
+    hours: 1,
+    minutes: 30,
+    seconds: 45,
+  }),
+}));
+
 const renderWithChakra = (ui: React.ReactElement) => {
   return render(<ChakraProvider>{ui}</ChakraProvider>);
 };
@@ -18,7 +27,8 @@ describe('ShopPage component', () => {
   it('renders the header with navigation', () => {
     renderWithChakra(<ShopPage />);
     expect(screen.getByRole('navigation')).toBeInTheDocument();
-    expect(screen.getByText('JWShop')).toBeInTheDocument();
+    const jwShopHeadings = screen.getAllByText('JWShop');
+    expect(jwShopHeadings.length).toBeGreaterThanOrEqual(1);
   });
 
   // PAGE TITLE

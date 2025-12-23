@@ -4,6 +4,15 @@ import userEvent from '@testing-library/user-event';
 import { ChakraProvider } from '@chakra-ui/react';
 import Home from '../page';
 
+// Mock useCountdown to return fixed values
+jest.mock('../../components/PromoBanner/hooks/useCountdown', () => ({
+  useCountdown: () => ({
+    hours: 1,
+    minutes: 30,
+    seconds: 45,
+  }),
+}));
+
 const renderWithChakra = (ui: React.ReactElement) => {
   return render(<ChakraProvider>{ui}</ChakraProvider>);
 };

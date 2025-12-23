@@ -3,7 +3,7 @@
 exports[`CheckoutPage component renders correctly and matches snapshot 1`] = `
 <DocumentFragment>
   <div
-    class="css-p64ykl"
+    class="css-1cil781"
   >
     <div
       class="css-kwsxe9"
@@ -12,14 +12,9 @@ exports[`CheckoutPage component renders correctly and matches snapshot 1`] = `
         class="css-1396cln"
       >
         <p
-          class="chakra-text css-8frxog"
+          class="chakra-text css-nkk3iy"
         >
-          LIMITED TIME 
-          <span
-            class="chakra-text css-1h7bc0l"
-          >
-            SALE
-          </span>
+          LIMITED WINTER SALE
         </p>
         <div
           class="css-1yxs27r"
@@ -28,7 +23,7 @@ exports[`CheckoutPage component renders correctly and matches snapshot 1`] = `
             class="css-1k2969j"
           >
             <div
-              class="css-1o5mf2t"
+              class="css-12q1f50"
             />
             <div
               class="css-oc3fy4"
@@ -50,14 +45,9 @@ exports[`CheckoutPage component renders correctly and matches snapshot 1`] = `
           class="css-7se1um"
         >
           <p
-            class="chakra-text css-106uhfd"
+            class="chakra-text css-16arvcm"
           >
-            LIMITED TIME 
-            <span
-              class="chakra-text css-1h7bc0l"
-            >
-              SALE
-            </span>
+            LIMITED WINTER SALE
           </p>
           <div
             class="css-k008qs"
@@ -65,7 +55,7 @@ exports[`CheckoutPage component renders correctly and matches snapshot 1`] = `
             <p
               class="chakra-text css-w9n5vf"
             >
-              02
+              01
             </p>
             <p
               class="chakra-text css-lfq40t"
@@ -85,7 +75,7 @@ exports[`CheckoutPage component renders correctly and matches snapshot 1`] = `
             <p
               class="chakra-text css-w9n5vf"
             >
-              00
+              45
             </p>
           </div>
         </div>
@@ -96,7 +86,7 @@ exports[`CheckoutPage component renders correctly and matches snapshot 1`] = `
             class="css-1k2969j"
           >
             <div
-              class="css-1o5mf2t"
+              class="css-12q1f50"
             />
             <div
               class="css-oc3fy4"
@@ -140,37 +130,37 @@ exports[`CheckoutPage component renders correctly and matches snapshot 1`] = `
           class="chakra-stack css-16itcnq"
         >
           <a
-            class="chakra-link css-1xwaubb"
+            class="chakra-link css-8wuuuf"
             href="/"
           >
             Home
           </a>
           <a
-            class="chakra-link css-1xwaubb"
+            class="chakra-link css-8wuuuf"
             href="/about"
           >
             About
           </a>
           <a
-            class="chakra-link css-1xwaubb"
+            class="chakra-link css-8wuuuf"
             href="/blog"
           >
             Blog
           </a>
           <a
-            class="chakra-link css-1xwaubb"
+            class="chakra-link css-8wuuuf"
             href="/features"
           >
             Features
           </a>
           <a
-            class="chakra-link css-1xwaubb"
+            class="chakra-link css-8wuuuf"
             href="/contacts"
           >
             Contacts
           </a>
           <a
-            class="chakra-link css-11na6px"
+            class="chakra-link css-8wuuuf"
             href="/shop"
           >
             Shop
@@ -770,6 +760,136 @@ exports[`CheckoutPage component renders correctly and matches snapshot 1`] = `
       </div>
     </div>
   </div>
+  <footer
+    class="css-qdyq4i"
+  >
+    <div
+      class="chakra-container css-11vl7h3"
+    >
+      <div
+        class="css-6xylhh"
+      >
+        <div
+          class="css-1rr4qq7"
+        >
+          <h2
+            class="chakra-heading css-hjn2at"
+          >
+            JWShop
+          </h2>
+        </div>
+        <div
+          class="chakra-stack css-1fiohxh"
+        >
+          <a
+            class="chakra-link css-1a4de1x"
+          >
+            Home
+          </a>
+          <a
+            class="chakra-link css-1a4de1x"
+          >
+            About
+          </a>
+          <a
+            class="chakra-link css-1a4de1x"
+          >
+            Blog
+          </a>
+          <a
+            class="chakra-link css-1a4de1x"
+          >
+            Shop
+          </a>
+          <a
+            class="chakra-link css-1a4de1x"
+          >
+            Features
+          </a>
+          <a
+            class="chakra-link css-1a4de1x"
+          >
+            Contacts
+          </a>
+          <a
+            class="chakra-link css-1a4de1x"
+          >
+            Instant Quote
+          </a>
+        </div>
+        <div
+          class="css-mkpwg2"
+        >
+          <p
+            class="chakra-text css-10yi2ax"
+          >
+            Subscribe to our newsletter
+          </p>
+          <div
+            class="chakra-input__group css-1y0e7gb"
+            data-group="true"
+          >
+            <input
+              class="chakra-input css-a5kdp8"
+              placeholder="Enter your email"
+            />
+            <div
+              class="chakra-input__right-element css-yo2dg"
+            >
+              <button
+                class="chakra-button css-1av36fq"
+                type="button"
+              >
+                Subscribe
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr
+        aria-orientation="horizontal"
+        class="chakra-divider css-1e6gg7n"
+      />
+      <div
+        class="css-5vgdtj"
+      >
+        <p
+          class="chakra-text css-0"
+        >
+          © 2025 JWShop. All rights reserved.
+        </p>
+        <div
+          class="chakra-stack css-rzkssc"
+        >
+          <a
+            class="chakra-link css-1fwsdwn"
+          >
+            Privacy Policy
+          </a>
+          <p
+            class="chakra-text css-0"
+          >
+            ·
+          </p>
+          <a
+            class="chakra-link css-1fwsdwn"
+          >
+            Terms of Service
+          </a>
+          <p
+            class="chakra-text css-0"
+          >
+            ·
+          </p>
+          <a
+            class="chakra-link css-1fwsdwn"
+          >
+            Contact Us
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
   <span
     hidden=""
     id="__chakra_env"
