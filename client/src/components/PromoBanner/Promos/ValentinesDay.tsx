@@ -19,7 +19,7 @@ const TimeUnit: React.FC<{ timeUnit: string | number }> = ({ timeUnit }) => (
   </Text>
 );
 
-const Header = () => {
+const ValentinesDay = () => {
   const targetDate = useMemo(
     () => new Date(new Date().getTime() + 90000000),
     [],
@@ -30,12 +30,12 @@ const Header = () => {
   return (
     <Box
       bgImage={{
-        base: `url(/images/sale/winterSale/mobile.webp)`,
-        md: `url(/images/sale/winterSale/default.webp)`,
+        base: `url(/images/sale/valentinesDay/mobile.webp)`,
+        md: `url(/images/sale/valentinesDay/default.webp)`,
       }}
       bgPosition="center"
       bgSize="cover"
-      backgroundColor="blue"
+      backgroundColor="red.500"
       sx={{
         top: 0,
         height: { base: '4rem', md: '5rem' },
@@ -68,7 +68,7 @@ const Header = () => {
               zIndex: 100,
             }}
           >
-            LIMITED WINTER SALE
+            VALENTINE’S DAY SPECIAL
           </Text>
           <Flex
             sx={{
@@ -76,7 +76,7 @@ const Header = () => {
               h: '5rem',
             }}
           >
-            <DiscountSticker textColor="white" bgColor="cyan.200" />
+            <DiscountSticker textColor="white" bgColor="pink.200" />
           </Flex>
           <Flex
             flexDir="column"
@@ -98,7 +98,7 @@ const Header = () => {
                 zIndex: 100,
               }}
             >
-              LIMITED WINTER SALE
+              VALENTINE’S DAY SPECIAL
             </Text>
             <Flex>
               <TimeUnit timeUnit={formatNumberToDwoDigits(hours)} />
@@ -136,7 +136,7 @@ const Header = () => {
             }}
             mr="12px"
           >
-            <DiscountSticker textColor="white" bgColor="cyan.200" />
+            <DiscountSticker textColor="white" bgColor="pink.200" />
           </Flex>
         </Flex>
       </Box>
@@ -144,4 +144,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default ValentinesDay;
