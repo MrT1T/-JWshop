@@ -15,6 +15,11 @@ export interface RegisterUserInput {
   password: string;
 }
 
+export interface LoginUserInput {
+  email: string;
+  password: string;
+}
+
 export class ApiError extends Error {
   status: number;
 
@@ -25,14 +30,15 @@ export class ApiError extends Error {
   }
 }
 
-export async function registerUser(
-  input: RegisterUserInput,
-): Promise<RegisteredUser> {
+async function postJson<TResponse>(
+  path: string,
+  body: unknown,
+): Promise<TResponse> {
   let response: Response;
 
   try {
-    response = await fetch(`${API_BASE_URL}/api/users`, {
-      body: JSON.stringify(input),
+    response = await fetch(`${API_BASE_URL}${path}`, {
+      body: JSON.stringify(body),
       headers: { 'Content-Type': 'application/json' },
       method: 'POST',
     });
@@ -53,5 +59,15 @@ export async function registerUser(
     throw new ApiError(message, response.status);
   }
 
-  return data as RegisteredUser;
+  return data as TResponse;
+}
+
+export function registerUser(
+  input: RegisterUserInput,
+): Promise<RegisteredUser> {
+  return postJson<RegisteredUser>('/api/users', input);
+}
+
+export function loginUser(input: LoginUserInput): Promise<RegisteredUser> {
+  return postJson<RegisteredUser>('/api/users/login', input);
 }

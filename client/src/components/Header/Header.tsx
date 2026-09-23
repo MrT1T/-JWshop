@@ -14,9 +14,11 @@ import {
 import { HamburgerIcon } from '@chakra-ui/icons';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import { useCurrentUser } from '@/lib/auth';
 
 const Header: React.FC = () => {
   const pathname = usePathname();
+  const currentUser = useCurrentUser();
   return (
     <Box borderBottom="1px" borderColor="gray.200" bg="white">
       <Container maxW="container.xl">
@@ -164,21 +166,60 @@ const Header: React.FC = () => {
             </Link>
 
             {/* User Icon */}
-            <IconButton
-              aria-label="User account"
-              icon={
-                <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
-                  <path
-                    d="M13.36 10.93C12.37 9.93 11.18 9.2 9.88 8.76C11.08 7.88 11.85 6.45 11.85 4.85C11.85 2.18 9.68 0 7 0C4.32 0 2.15 2.18 2.15 4.85C2.15 6.45 2.92 7.88 4.12 8.76C2.82 9.2 1.63 9.93 0.64 10.93C-1.06 12.63 -0.71 14.89 0.29 16.29L6.52 17.21C6.65 17.33 6.83 17.4 7 17.4C7.17 17.4 7.35 17.33 7.48 17.21L13.71 16.29C14.71 14.89 15.06 12.63 13.36 10.93Z"
-                    stroke="currentColor"
-                    strokeWidth="1.5"
-                    fill="none"
+            {currentUser ? (
+              <IconButton
+                aria-label="User account"
+                icon={
+                  <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                    <path
+                      d="M13.36 10.93C12.37 9.93 11.18 9.2 9.88 8.76C11.08 7.88 11.85 6.45 11.85 4.85C11.85 2.18 9.68 0 7 0C4.32 0 2.15 2.18 2.15 4.85C2.15 6.45 2.92 7.88 4.12 8.76C2.82 9.2 1.63 9.93 0.64 10.93C-1.06 12.63 -0.71 14.89 0.29 16.29L6.52 17.21C6.65 17.33 6.83 17.4 7 17.4C7.17 17.4 7.35 17.33 7.48 17.21L13.71 16.29C14.71 14.89 15.06 12.63 13.36 10.93Z"
+                      stroke="currentColor"
+                      strokeWidth="1.5"
+                      fill="none"
+                    />
+                  </svg>
+                }
+                variant="ghost"
+                size="sm"
+              />
+            ) : (
+              <Link href="/login" passHref legacyBehavior>
+                <ChakraLink _hover={{ textDecoration: 'none' }}>
+                  <IconButton
+                    aria-label="Sign in"
+                    icon={
+                      <svg
+                        width="18"
+                        height="18"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                      >
+                        <path
+                          d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"
+                          stroke="currentColor"
+                          strokeWidth="1.5"
+                          fill="none"
+                        />
+                        <path
+                          d="M10 17L15 12L10 7"
+                          stroke="currentColor"
+                          strokeWidth="1.5"
+                          fill="none"
+                        />
+                        <path
+                          d="M15 12H3"
+                          stroke="currentColor"
+                          strokeWidth="1.5"
+                          fill="none"
+                        />
+                      </svg>
+                    }
+                    variant="ghost"
+                    size="sm"
                   />
-                </svg>
-              }
-              variant="ghost"
-              size="sm"
-            />
+                </ChakraLink>
+              </Link>
+            )}
 
             {/* Mobile Menu */}
             <IconButton

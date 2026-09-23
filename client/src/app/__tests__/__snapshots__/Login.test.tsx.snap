@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
-exports[`ShopPage component renders correctly and matches snapshot 1`] = `
+exports[`LoginPage component renders correctly and matches snapshot 1`] = `
 <DocumentFragment>
   <div
     class="css-123acky"
@@ -294,349 +294,141 @@ exports[`ShopPage component renders correctly and matches snapshot 1`] = `
       </div>
     </div>
     <div
-      class="chakra-container css-gnzmak"
+      class="chakra-container css-14xp4nx"
     >
-      <h2
-        class="chakra-heading css-q1yqfi"
-      >
-        Shop
-      </h2>
-      <p
-        class="chakra-text css-odq06w"
-      >
-        Home
-      </p>
       <div
-        class="css-rihwos"
+        class="css-c8vgvd"
       >
-        <div
-          class="chakra-input__group css-6qwbir"
-          data-group="true"
+        <form
+          class="css-ey2k6p"
         >
           <div
-            class="chakra-input__left-element css-gv1iwz"
+            class="chakra-stack css-1tczn7r"
           >
-            <svg
-              class="chakra-icon css-177yplm"
-              focusable="false"
-              viewBox="0 0 24 24"
+            <h2
+              class="chakra-heading css-etqs3z"
             >
-              <path
-                d="M23.384,21.619,16.855,15.09a9.284,9.284,0,1,0-1.768,1.768l6.529,6.529a1.266,1.266,0,0,0,1.768,0A1.251,1.251,0,0,0,23.384,21.619ZM2.75,9.5a6.75,6.75,0,1,1,6.75,6.75A6.758,6.758,0,0,1,2.75,9.5Z"
-                fill="currentColor"
+              Sign in
+            </h2>
+            <p
+              class="chakra-text css-rukqh5"
+            >
+              Welcome back. Sign in to continue shopping at JWShop.
+            </p>
+          </div>
+          <div
+            class="chakra-stack css-42ki38"
+          >
+            <div
+              class="chakra-form-control css-1kxonj9"
+              role="group"
+            >
+              <label
+                class="chakra-form__label css-1gib1w2"
+                for="field-«r0»"
+                id="field-«r0»-label"
+              >
+                Email address
+              </label>
+              <input
+                class="chakra-input css-1m40kqu"
+                id="field-«r0»"
+                placeholder="jane@example.com"
+                type="email"
+                value=""
               />
-            </svg>
+            </div>
+            <div
+              class="chakra-form-control css-1kxonj9"
+              role="group"
+            >
+              <label
+                class="chakra-form__label css-1gib1w2"
+                for="field-«r1»"
+                id="field-«r1»-label"
+              >
+                Password
+              </label>
+              <div
+                class="chakra-input__group css-1y0e7gb"
+                data-group="true"
+              >
+                <input
+                  class="chakra-input css-g8sg45"
+                  id="field-«r1»"
+                  placeholder="Enter your password"
+                  type="password"
+                  value=""
+                />
+                <div
+                  class="chakra-input__right-element css-h6d4ak"
+                >
+                  <button
+                    aria-label="Show password"
+                    class="chakra-button css-okm0kr"
+                    type="button"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="chakra-icon css-onkibi"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <g
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M23.432,10.524C20.787,7.614,16.4,4.538,12,4.6,7.6,4.537,3.213,7.615.568,10.524a2.211,2.211,0,0,0,0,2.948C3.182,16.351,7.507,19.4,11.839,19.4h.308c4.347,0,8.671-3.049,11.288-5.929A2.21,2.21,0,0,0,23.432,10.524ZM7.4,12A4.6,4.6,0,1,1,12,16.6,4.6,4.6,0,0,1,7.4,12Z"
+                        />
+                        <circle
+                          cx="12"
+                          cy="12"
+                          r="2"
+                        />
+                      </g>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <button
+              class="chakra-button css-wtahvx"
+              type="submit"
+            >
+              Sign in
+            </button>
+            <p
+              class="chakra-text css-8bknka"
+            >
+              Don't have an account? 
+              <a
+                class="chakra-link css-15fitui"
+                href="/register"
+              >
+                Sign up
+              </a>
+            </p>
           </div>
-          <input
-            class="chakra-input css-u1h4e1"
-            placeholder="Search..."
-            value=""
-          />
-        </div>
+        </form>
         <div
-          class="chakra-select__wrapper css-1dluih1"
+          class="css-1u52f6j"
         >
-          <select
-            class="chakra-select css-1xtkowt"
+          <h2
+            class="chakra-heading css-1efar8"
           >
-            <option
-              value="latest"
-            >
-              Sort by latest
-            </option>
-            <option
-              value="price-low"
-            >
-              Price: Low to High
-            </option>
-            <option
-              value="price-high"
-            >
-              Price: High to Low
-            </option>
-            <option
-              value="name"
-            >
-              Name: A to Z
-            </option>
-          </select>
-          <div
-            class="chakra-select__icon-wrapper css-iohxn1"
+            New to JWShop?
+          </h2>
+          <p
+            class="chakra-text css-d1zf0j"
           >
-            <svg
-              aria-hidden="true"
-              class="chakra-select__icon"
-              focusable="false"
-              role="presentation"
-              style="width: 1em; height: 1em; color: currentcolor;"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
-                fill="currentColor"
-              />
-            </svg>
-          </div>
-        </div>
-      </div>
-      <hr
-        aria-orientation="horizontal"
-        class="chakra-divider css-5vqe1e"
-      />
-      <div
-        class="chakra-stack css-xelxlo"
-      >
-        <button
-          class="chakra-button css-qeoh97"
-          type="button"
-        >
-          All
-          <span
-            class="chakra-text css-1dqt7pn"
+            Create a free account to save your wishlist, get early access to seasonal sales, and check out faster.
+          </p>
+          <a
+            class="chakra-button css-1uenrny"
+            href="/register"
           >
-            (2411)
-          </span>
-        </button>
-        <button
-          class="chakra-button css-ub10mn"
-          type="button"
-        >
-          Necklaces
-          <span
-            class="chakra-text css-1dqt7pn"
-          >
-            (423)
-          </span>
-        </button>
-        <button
-          class="chakra-button css-ub10mn"
-          type="button"
-        >
-          Earrings
-        </button>
-      </div>
-      <hr
-        aria-orientation="horizontal"
-        class="chakra-divider css-1q7nlqz"
-      />
-      <div
-        class="css-1tw9oeb"
-      >
-        <div
-          class="chakra-stack css-b0p5p9"
-        >
-          <div
-            class="css-t5nb6v"
-          >
-            <img
-              alt="Product 1"
-              class="chakra-image css-96316e"
-              src="https://via.placeholder.com/300"
-            />
-          </div>
-          <div
-            class="chakra-stack css-cgi92c"
-          >
-            <p
-              class="chakra-text css-1bsgmhw"
-            >
-              Product 1
-            </p>
-            <p
-              class="chakra-text css-1xs2h3i"
-            >
-              $99.99
-            </p>
-          </div>
-        </div>
-        <div
-          class="chakra-stack css-b0p5p9"
-        >
-          <div
-            class="css-t5nb6v"
-          >
-            <img
-              alt="Product 2"
-              class="chakra-image css-96316e"
-              src="https://via.placeholder.com/300"
-            />
-          </div>
-          <div
-            class="chakra-stack css-cgi92c"
-          >
-            <p
-              class="chakra-text css-1bsgmhw"
-            >
-              Product 2
-            </p>
-            <p
-              class="chakra-text css-1xs2h3i"
-            >
-              $149.99
-            </p>
-          </div>
-        </div>
-        <div
-          class="chakra-stack css-b0p5p9"
-        >
-          <div
-            class="css-t5nb6v"
-          >
-            <img
-              alt="Product 3"
-              class="chakra-image css-96316e"
-              src="https://via.placeholder.com/300"
-            />
-          </div>
-          <div
-            class="chakra-stack css-cgi92c"
-          >
-            <p
-              class="chakra-text css-1bsgmhw"
-            >
-              Product 3
-            </p>
-            <p
-              class="chakra-text css-1xs2h3i"
-            >
-              $79.99
-            </p>
-          </div>
-        </div>
-        <div
-          class="chakra-stack css-b0p5p9"
-        >
-          <div
-            class="css-t5nb6v"
-          >
-            <img
-              alt="Product 4"
-              class="chakra-image css-96316e"
-              src="https://via.placeholder.com/300"
-            />
-          </div>
-          <div
-            class="chakra-stack css-cgi92c"
-          >
-            <p
-              class="chakra-text css-1bsgmhw"
-            >
-              Product 4
-            </p>
-            <p
-              class="chakra-text css-1xs2h3i"
-            >
-              $199.99
-            </p>
-          </div>
-        </div>
-        <div
-          class="chakra-stack css-b0p5p9"
-        >
-          <div
-            class="css-t5nb6v"
-          >
-            <img
-              alt="Product 5"
-              class="chakra-image css-96316e"
-              src="https://via.placeholder.com/300"
-            />
-          </div>
-          <div
-            class="chakra-stack css-cgi92c"
-          >
-            <p
-              class="chakra-text css-1bsgmhw"
-            >
-              Product 5
-            </p>
-            <p
-              class="chakra-text css-1xs2h3i"
-            >
-              $89.99
-            </p>
-          </div>
-        </div>
-        <div
-          class="chakra-stack css-b0p5p9"
-        >
-          <div
-            class="css-t5nb6v"
-          >
-            <img
-              alt="Product 6"
-              class="chakra-image css-96316e"
-              src="https://via.placeholder.com/300"
-            />
-          </div>
-          <div
-            class="chakra-stack css-cgi92c"
-          >
-            <p
-              class="chakra-text css-1bsgmhw"
-            >
-              Product 6
-            </p>
-            <p
-              class="chakra-text css-1xs2h3i"
-            >
-              $129.99
-            </p>
-          </div>
-        </div>
-        <div
-          class="chakra-stack css-b0p5p9"
-        >
-          <div
-            class="css-t5nb6v"
-          >
-            <img
-              alt="Product 7"
-              class="chakra-image css-96316e"
-              src="https://via.placeholder.com/300"
-            />
-          </div>
-          <div
-            class="chakra-stack css-cgi92c"
-          >
-            <p
-              class="chakra-text css-1bsgmhw"
-            >
-              Product 7
-            </p>
-            <p
-              class="chakra-text css-1xs2h3i"
-            >
-              $159.99
-            </p>
-          </div>
-        </div>
-        <div
-          class="chakra-stack css-b0p5p9"
-        >
-          <div
-            class="css-t5nb6v"
-          >
-            <img
-              alt="Product 8"
-              class="chakra-image css-96316e"
-              src="https://via.placeholder.com/300"
-            />
-          </div>
-          <div
-            class="chakra-stack css-cgi92c"
-          >
-            <p
-              class="chakra-text css-1bsgmhw"
-            >
-              Product 8
-            </p>
-            <p
-              class="chakra-text css-1xs2h3i"
-            >
-              $119.99
-            </p>
-          </div>
+            Register
+          </a>
         </div>
       </div>
     </div>
