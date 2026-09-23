@@ -657,6 +657,7 @@ exports[`Home component renders correctly and matches snapshot 1`] = `
             </a>
             <a
               class="chakra-link css-1a4de1x"
+              href="/about"
             >
               About
             </a>

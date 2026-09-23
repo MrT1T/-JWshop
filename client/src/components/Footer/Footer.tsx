@@ -13,8 +13,9 @@ import {
   Button,
   Text,
   Divider,
-  Link,
+  Link as ChakraLink,
 } from '@chakra-ui/react';
+import NextLink from 'next/link';
 
 const Footer: React.FC = () => {
   return (
@@ -39,27 +40,29 @@ const Footer: React.FC = () => {
           </Box>
 
           <HStack spacing={6} display={{ base: 'none', md: 'flex' }} flex="2">
-            <Link fontSize="sm" _hover={{ color: 'gray.600' }}>
+            <ChakraLink fontSize="sm" _hover={{ color: 'gray.600' }}>
               Home
-            </Link>
-            <Link fontSize="sm" _hover={{ color: 'gray.600' }}>
-              About
-            </Link>
-            <Link fontSize="sm" _hover={{ color: 'gray.600' }}>
+            </ChakraLink>
+            <NextLink href="/about" passHref legacyBehavior>
+              <ChakraLink fontSize="sm" _hover={{ color: 'gray.600' }}>
+                About
+              </ChakraLink>
+            </NextLink>
+            <ChakraLink fontSize="sm" _hover={{ color: 'gray.600' }}>
               Blog
-            </Link>
-            <Link fontSize="sm" _hover={{ color: 'gray.600' }}>
+            </ChakraLink>
+            <ChakraLink fontSize="sm" _hover={{ color: 'gray.600' }}>
               Shop
-            </Link>
-            <Link fontSize="sm" _hover={{ color: 'gray.600' }}>
+            </ChakraLink>
+            <ChakraLink fontSize="sm" _hover={{ color: 'gray.600' }}>
               Features
-            </Link>
-            <Link fontSize="sm" _hover={{ color: 'gray.600' }}>
+            </ChakraLink>
+            <ChakraLink fontSize="sm" _hover={{ color: 'gray.600' }}>
               Contacts
-            </Link>
-            <Link fontSize="sm" _hover={{ color: 'gray.600' }}>
+            </ChakraLink>
+            <ChakraLink fontSize="sm" _hover={{ color: 'gray.600' }}>
               Instant Quote
-            </Link>
+            </ChakraLink>
           </HStack>
 
           <Box maxW={{ base: '100%', md: '360px' }} w="100%" flex="1">
@@ -101,17 +104,17 @@ const Footer: React.FC = () => {
         >
           <Text>© 2025 JWShop. All rights reserved.</Text>
           <HStack spacing={3} display={{ base: 'none', md: 'flex' }}>
-            <Link fontSize="xs" _hover={{ color: 'gray.800' }}>
+            <ChakraLink fontSize="xs" _hover={{ color: 'gray.800' }}>
               Privacy Policy
-            </Link>
+            </ChakraLink>
             <Text>·</Text>
-            <Link fontSize="xs" _hover={{ color: 'gray.800' }}>
+            <ChakraLink fontSize="xs" _hover={{ color: 'gray.800' }}>
               Terms of Service
-            </Link>
+            </ChakraLink>
             <Text>·</Text>
-            <Link fontSize="xs" _hover={{ color: 'gray.800' }}>
+            <ChakraLink fontSize="xs" _hover={{ color: 'gray.800' }}>
               Contact Us
-            </Link>
+            </ChakraLink>
           </HStack>
         </Flex>
       </Container>

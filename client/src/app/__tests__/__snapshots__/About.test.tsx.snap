@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
-exports[`ShopPage component renders correctly and matches snapshot 1`] = `
+exports[`AboutPage component renders correctly and matches snapshot 1`] = `
 <DocumentFragment>
   <div
     class="css-123acky"
@@ -294,349 +294,328 @@ exports[`ShopPage component renders correctly and matches snapshot 1`] = `
       </div>
     </div>
     <div
-      class="chakra-container css-gnzmak"
+      class="chakra-container css-14xp4nx"
     >
-      <h2
-        class="chakra-heading css-q1yqfi"
-      >
-        Shop
-      </h2>
-      <p
-        class="chakra-text css-odq06w"
-      >
-        Home
-      </p>
       <div
-        class="css-rihwos"
+        class="chakra-stack css-9euuke"
+      >
+        <h2
+          class="chakra-heading css-xp4quh"
+        >
+          About JWShop
+        </h2>
+        <p
+          class="chakra-text css-15kqlsl"
+        >
+          We're a jewelry and watch shop built on one idea: pieces worth wearing every day should be made to last every day.
+        </p>
+      </div>
+    </div>
+    <div
+      class="css-vgu039"
+    >
+      <div
+        class="chakra-container css-11vl7h3"
       >
         <div
-          class="chakra-input__group css-6qwbir"
-          data-group="true"
+          class="css-1ijhh2b"
         >
           <div
-            class="chakra-input__left-element css-gv1iwz"
+            class="chakra-stack css-dpnoar"
           >
-            <svg
-              class="chakra-icon css-177yplm"
-              focusable="false"
-              viewBox="0 0 24 24"
+            <h2
+              class="chakra-heading css-1telf0v"
             >
-              <path
-                d="M23.384,21.619,16.855,15.09a9.284,9.284,0,1,0-1.768,1.768l6.529,6.529a1.266,1.266,0,0,0,1.768,0A1.251,1.251,0,0,0,23.384,21.619ZM2.75,9.5a6.75,6.75,0,1,1,6.75,6.75A6.758,6.758,0,0,1,2.75,9.5Z"
-                fill="currentColor"
-              />
-            </svg>
+              Our Story
+            </h2>
+            <p
+              class="chakra-text css-1fevzpm"
+            >
+              JWShop started in 2010 as a small workbench above a watch repair shop, fixing heirloom pieces that other stores had given up on. Word spread, the workbench became a studio, and the studio became the jewelry and watch shop you're browsing today.
+            </p>
+            <p
+              class="chakra-text css-1fevzpm"
+            >
+              We still design and finish every collection ourselves — rings, chains, ear cuffs, and the Lawson watch line — because a piece you'll wear every day deserves more than a factory catalog. Simplicity, elegance, and materials built to outlast the trend cycle: that's the whole philosophy.
+            </p>
           </div>
-          <input
-            class="chakra-input css-u1h4e1"
-            placeholder="Search..."
-            value=""
+          <div
+            class="css-1g0vid6"
           />
         </div>
+      </div>
+    </div>
+    <div
+      class="css-10q7ld9"
+    >
+      <div
+        class="chakra-container css-11vl7h3"
+      >
         <div
-          class="chakra-select__wrapper css-1dluih1"
+          class="css-184693m"
         >
-          <select
-            class="chakra-select css-1xtkowt"
-          >
-            <option
-              value="latest"
-            >
-              Sort by latest
-            </option>
-            <option
-              value="price-low"
-            >
-              Price: Low to High
-            </option>
-            <option
-              value="price-high"
-            >
-              Price: High to Low
-            </option>
-            <option
-              value="name"
-            >
-              Name: A to Z
-            </option>
-          </select>
           <div
-            class="chakra-select__icon-wrapper css-iohxn1"
+            class="chakra-stack css-18e1wj0"
           >
-            <svg
-              aria-hidden="true"
-              class="chakra-select__icon"
-              focusable="false"
-              role="presentation"
-              style="width: 1em; height: 1em; color: currentcolor;"
-              viewBox="0 0 24 24"
+            <p
+              class="chakra-text css-1v2gwry"
             >
-              <path
-                d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
-                fill="currentColor"
-              />
-            </svg>
+              15+
+            </p>
+            <p
+              class="chakra-text css-8bknka"
+            >
+              Years of craftsmanship
+            </p>
+          </div>
+          <div
+            class="chakra-stack css-18e1wj0"
+          >
+            <p
+              class="chakra-text css-1v2gwry"
+            >
+              50k+
+            </p>
+            <p
+              class="chakra-text css-8bknka"
+            >
+              Happy customers
+            </p>
+          </div>
+          <div
+            class="chakra-stack css-18e1wj0"
+          >
+            <p
+              class="chakra-text css-1v2gwry"
+            >
+              30+
+            </p>
+            <p
+              class="chakra-text css-8bknka"
+            >
+              Countries shipped to
+            </p>
+          </div>
+          <div
+            class="chakra-stack css-18e1wj0"
+          >
+            <p
+              class="chakra-text css-1v2gwry"
+            >
+              200k+
+            </p>
+            <p
+              class="chakra-text css-8bknka"
+            >
+              Pieces handcrafted
+            </p>
           </div>
         </div>
       </div>
-      <hr
-        aria-orientation="horizontal"
-        class="chakra-divider css-5vqe1e"
-      />
+    </div>
+    <div
+      class="css-1vn897a"
+    >
       <div
-        class="chakra-stack css-xelxlo"
+        class="chakra-container css-11vl7h3"
       >
-        <button
-          class="chakra-button css-qeoh97"
-          type="button"
+        <div
+          class="chakra-stack css-1ic4uum"
         >
-          All
-          <span
-            class="chakra-text css-1dqt7pn"
+          <h2
+            class="chakra-heading css-1telf0v"
           >
-            (2411)
-          </span>
-        </button>
-        <button
-          class="chakra-button css-ub10mn"
-          type="button"
-        >
-          Necklaces
-          <span
-            class="chakra-text css-1dqt7pn"
+            What We Stand For
+          </h2>
+          <p
+            class="chakra-text css-2d4wg1"
           >
-            (423)
-          </span>
-        </button>
-        <button
-          class="chakra-button css-ub10mn"
-          type="button"
+            Four principles that haven't changed since the workbench days.
+          </p>
+        </div>
+        <div
+          class="css-1spku6t"
         >
-          Earrings
-        </button>
+          <div
+            class="css-udz2cj"
+          >
+            <ul
+              class="css-155za0w"
+              role="list"
+            >
+              <li
+                class="css-h38yef"
+              >
+                <svg
+                  class="chakra-icon chakra-icon css-wwkhem"
+                  focusable="false"
+                  role="presentation"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12,0A12,12,0,1,0,24,12,12.014,12.014,0,0,0,12,0Zm6.927,8.2-6.845,9.289a1.011,1.011,0,0,1-1.43.188L5.764,13.769a1,1,0,1,1,1.25-1.562l4.076,3.261,6.227-8.451A1,1,0,1,1,18.927,8.2Z"
+                    fill="currentColor"
+                  />
+                </svg>
+                <div
+                  class="css-0"
+                >
+                  <p
+                    class="chakra-text css-vz2be9"
+                  >
+                    Uncompromising craftsmanship
+                  </p>
+                  <p
+                    class="chakra-text css-1wq0prc"
+                  >
+                    Every ring, chain, and watch is finished by hand and checked piece by piece before it ships — no shortcuts, no exceptions.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div
+            class="css-udz2cj"
+          >
+            <ul
+              class="css-155za0w"
+              role="list"
+            >
+              <li
+                class="css-h38yef"
+              >
+                <svg
+                  class="chakra-icon chakra-icon css-wwkhem"
+                  focusable="false"
+                  role="presentation"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12,0A12,12,0,1,0,24,12,12.014,12.014,0,0,0,12,0Zm6.927,8.2-6.845,9.289a1.011,1.011,0,0,1-1.43.188L5.764,13.769a1,1,0,1,1,1.25-1.562l4.076,3.261,6.227-8.451A1,1,0,1,1,18.927,8.2Z"
+                    fill="currentColor"
+                  />
+                </svg>
+                <div
+                  class="css-0"
+                >
+                  <p
+                    class="chakra-text css-vz2be9"
+                  >
+                    Honest, traceable materials
+                  </p>
+                  <p
+                    class="chakra-text css-1wq0prc"
+                  >
+                    We work directly with certified suppliers and use responsibly sourced metals and stones, from raw material to finished piece.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div
+            class="css-udz2cj"
+          >
+            <ul
+              class="css-155za0w"
+              role="list"
+            >
+              <li
+                class="css-h38yef"
+              >
+                <svg
+                  class="chakra-icon chakra-icon css-wwkhem"
+                  focusable="false"
+                  role="presentation"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12,0A12,12,0,1,0,24,12,12.014,12.014,0,0,0,12,0Zm6.927,8.2-6.845,9.289a1.011,1.011,0,0,1-1.43.188L5.764,13.769a1,1,0,1,1,1.25-1.562l4.076,3.261,6.227-8.451A1,1,0,1,1,18.927,8.2Z"
+                    fill="currentColor"
+                  />
+                </svg>
+                <div
+                  class="css-0"
+                >
+                  <p
+                    class="chakra-text css-vz2be9"
+                  >
+                    Timeless design
+                  </p>
+                  <p
+                    class="chakra-text css-1wq0prc"
+                  >
+                    Classic silhouettes built to be worn for decades, not seasons — jewelry and watches you pass down, not throw away.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div
+            class="css-udz2cj"
+          >
+            <ul
+              class="css-155za0w"
+              role="list"
+            >
+              <li
+                class="css-h38yef"
+              >
+                <svg
+                  class="chakra-icon chakra-icon css-wwkhem"
+                  focusable="false"
+                  role="presentation"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12,0A12,12,0,1,0,24,12,12.014,12.014,0,0,0,12,0Zm6.927,8.2-6.845,9.289a1.011,1.011,0,0,1-1.43.188L5.764,13.769a1,1,0,1,1,1.25-1.562l4.076,3.261,6.227-8.451A1,1,0,1,1,18.927,8.2Z"
+                    fill="currentColor"
+                  />
+                </svg>
+                <div
+                  class="css-0"
+                >
+                  <p
+                    class="chakra-text css-vz2be9"
+                  >
+                    Care after the purchase
+                  </p>
+                  <p
+                    class="chakra-text css-1wq0prc"
+                  >
+                    If something isn't right, we make it right. Free resizing, a real warranty, and a team that actually answers.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
-      <hr
-        aria-orientation="horizontal"
-        class="chakra-divider css-1q7nlqz"
-      />
+    </div>
+    <div
+      class="css-10q7ld9"
+    >
       <div
-        class="css-1tw9oeb"
+        class="chakra-container css-11vl7h3"
       >
         <div
-          class="chakra-stack css-b0p5p9"
+          class="chakra-stack css-18ox2ab"
         >
-          <div
-            class="css-t5nb6v"
+          <h2
+            class="chakra-heading css-1telf0v"
           >
-            <img
-              alt="Product 1"
-              class="chakra-image css-96316e"
-              src="https://via.placeholder.com/300"
-            />
-          </div>
-          <div
-            class="chakra-stack css-cgi92c"
+            See the Collection
+          </h2>
+          <p
+            class="chakra-text css-2d4wg1"
           >
-            <p
-              class="chakra-text css-1bsgmhw"
-            >
-              Product 1
-            </p>
-            <p
-              class="chakra-text css-1xs2h3i"
-            >
-              $99.99
-            </p>
-          </div>
-        </div>
-        <div
-          class="chakra-stack css-b0p5p9"
-        >
-          <div
-            class="css-t5nb6v"
+            Rings, chains, and watches — handcrafted by the same team that started it all.
+          </p>
+          <a
+            class="css-6s2jkn"
+            href="/shop"
           >
-            <img
-              alt="Product 2"
-              class="chakra-image css-96316e"
-              src="https://via.placeholder.com/300"
-            />
-          </div>
-          <div
-            class="chakra-stack css-cgi92c"
-          >
-            <p
-              class="chakra-text css-1bsgmhw"
-            >
-              Product 2
-            </p>
-            <p
-              class="chakra-text css-1xs2h3i"
-            >
-              $149.99
-            </p>
-          </div>
-        </div>
-        <div
-          class="chakra-stack css-b0p5p9"
-        >
-          <div
-            class="css-t5nb6v"
-          >
-            <img
-              alt="Product 3"
-              class="chakra-image css-96316e"
-              src="https://via.placeholder.com/300"
-            />
-          </div>
-          <div
-            class="chakra-stack css-cgi92c"
-          >
-            <p
-              class="chakra-text css-1bsgmhw"
-            >
-              Product 3
-            </p>
-            <p
-              class="chakra-text css-1xs2h3i"
-            >
-              $79.99
-            </p>
-          </div>
-        </div>
-        <div
-          class="chakra-stack css-b0p5p9"
-        >
-          <div
-            class="css-t5nb6v"
-          >
-            <img
-              alt="Product 4"
-              class="chakra-image css-96316e"
-              src="https://via.placeholder.com/300"
-            />
-          </div>
-          <div
-            class="chakra-stack css-cgi92c"
-          >
-            <p
-              class="chakra-text css-1bsgmhw"
-            >
-              Product 4
-            </p>
-            <p
-              class="chakra-text css-1xs2h3i"
-            >
-              $199.99
-            </p>
-          </div>
-        </div>
-        <div
-          class="chakra-stack css-b0p5p9"
-        >
-          <div
-            class="css-t5nb6v"
-          >
-            <img
-              alt="Product 5"
-              class="chakra-image css-96316e"
-              src="https://via.placeholder.com/300"
-            />
-          </div>
-          <div
-            class="chakra-stack css-cgi92c"
-          >
-            <p
-              class="chakra-text css-1bsgmhw"
-            >
-              Product 5
-            </p>
-            <p
-              class="chakra-text css-1xs2h3i"
-            >
-              $89.99
-            </p>
-          </div>
-        </div>
-        <div
-          class="chakra-stack css-b0p5p9"
-        >
-          <div
-            class="css-t5nb6v"
-          >
-            <img
-              alt="Product 6"
-              class="chakra-image css-96316e"
-              src="https://via.placeholder.com/300"
-            />
-          </div>
-          <div
-            class="chakra-stack css-cgi92c"
-          >
-            <p
-              class="chakra-text css-1bsgmhw"
-            >
-              Product 6
-            </p>
-            <p
-              class="chakra-text css-1xs2h3i"
-            >
-              $129.99
-            </p>
-          </div>
-        </div>
-        <div
-          class="chakra-stack css-b0p5p9"
-        >
-          <div
-            class="css-t5nb6v"
-          >
-            <img
-              alt="Product 7"
-              class="chakra-image css-96316e"
-              src="https://via.placeholder.com/300"
-            />
-          </div>
-          <div
-            class="chakra-stack css-cgi92c"
-          >
-            <p
-              class="chakra-text css-1bsgmhw"
-            >
-              Product 7
-            </p>
-            <p
-              class="chakra-text css-1xs2h3i"
-            >
-              $159.99
-            </p>
-          </div>
-        </div>
-        <div
-          class="chakra-stack css-b0p5p9"
-        >
-          <div
-            class="css-t5nb6v"
-          >
-            <img
-              alt="Product 8"
-              class="chakra-image css-96316e"
-              src="https://via.placeholder.com/300"
-            />
-          </div>
-          <div
-            class="chakra-stack css-cgi92c"
-          >
-            <p
-              class="chakra-text css-1bsgmhw"
-            >
-              Product 8
-            </p>
-            <p
-              class="chakra-text css-1xs2h3i"
-            >
-              $119.99
-            </p>
-          </div>
+            Shop now
+          </a>
         </div>
       </div>
     </div>
