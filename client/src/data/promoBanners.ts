@@ -23,7 +23,7 @@ export const promoBanners: PromoBannerConfig[] = [
   {
     id: 'winter-sale',
     component: WinterSale,
-    isActive: true,
+    isActive: false,
     priority: 1,
   },
   {
@@ -35,7 +35,7 @@ export const promoBanners: PromoBannerConfig[] = [
   {
     id: 'spring-sale',
     component: SpringSale,
-    isActive: false,
+    isActive: true,
     priority: 3,
   },
 ];
