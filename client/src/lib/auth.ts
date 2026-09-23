@@ -1,37 +1,33 @@
 'use client';
 
-import { useEffect, useState } from 'react';
-import { RegisteredUser } from './api';
+import { useCallback, useEffect, useState } from 'react';
+import { getCurrentUser, RegisteredUser } from './api';
 
-const STORAGE_KEY = 'jwshop:currentUser';
-
-export function getStoredUser(): RegisteredUser | null {
-  if (typeof window === 'undefined') return null;
-
-  try {
-    const raw = window.localStorage.getItem(STORAGE_KEY);
-    return raw ? (JSON.parse(raw) as RegisteredUser) : null;
-  } catch {
-    return null;
-  }
+interface UseCurrentUserResult {
+  isLoading: boolean;
+  refresh: () => Promise<void>;
+  user: RegisteredUser | null;
 }
 
-export function storeUser(user: RegisteredUser): void {
-  if (typeof window === 'undefined') return;
-  window.localStorage.setItem(STORAGE_KEY, JSON.stringify(user));
-}
-
-export function clearStoredUser(): void {
-  if (typeof window === 'undefined') return;
-  window.localStorage.removeItem(STORAGE_KEY);
-}
-
-export function useCurrentUser(): RegisteredUser | null {
+export function useCurrentUser(): UseCurrentUserResult {
   const [user, setUser] = useState<RegisteredUser | null>(null);
+  const [isLoading, setIsLoading] = useState(true);
 
-  useEffect(() => {
-    setUser(getStoredUser());
+  const refresh = useCallback(async () => {
+    setIsLoading(true);
+    try {
+      const current = await getCurrentUser();
+      setUser(current);
+    } catch {
+      setUser(null);
+    } finally {
+      setIsLoading(false);
+    }
   }, []);
 
-  return user;
+  useEffect(() => {
+    refresh();
+  }, [refresh]);
+
+  return { isLoading, refresh, user };
 }

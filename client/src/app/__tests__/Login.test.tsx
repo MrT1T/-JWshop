@@ -26,8 +26,15 @@ jest.mock('../../lib/api', () => {
 const pushMock = jest.fn();
 
 jest.mock('next/navigation', () => ({
+  ...jest.requireActual('next/navigation'),
   usePathname: () => '/login',
   useRouter: () => ({ push: pushMock }),
+}));
+
+// The Header hits /api/users/me on mount; stub it so tests stay hermetic and
+// default to a logged-out Header (this file asserts on the login form itself).
+jest.mock('../../lib/auth', () => ({
+  useCurrentUser: () => ({ isLoading: false, refresh: jest.fn(), user: null }),
 }));
 
 const mockedLoginUser = loginUser as jest.MockedFunction<typeof loginUser>;
@@ -57,7 +64,6 @@ const getSubmitButton = () =>
 beforeEach(() => {
   mockedLoginUser.mockReset();
   pushMock.mockReset();
-  window.localStorage.clear();
 });
 
 describe('LoginPage component', () => {
@@ -129,7 +135,7 @@ describe('LoginPage component', () => {
   });
 
   // SUCCESSFUL LOGIN
-  it('logs in with valid credentials, stores the user and redirects home', async () => {
+  it('logs in with valid credentials and redirects home', async () => {
     mockedLoginUser.mockResolvedValueOnce(LOGGED_IN_USER);
     const user = userEvent.setup();
     renderWithChakra(<LoginPage />);
@@ -142,9 +148,6 @@ describe('LoginPage component', () => {
       email: 'jane@example.com',
       password: 'Str0ng!Pass',
     });
-    expect(window.localStorage.getItem('jwshop:currentUser')).toContain(
-      'jane@example.com',
-    );
   }, 10000);
 
   // SERVER-SIDE ERRORS

@@ -27,7 +27,6 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { PromoBannerManager } from '@/components/PromoBanner';
 import { ApiError, loginUser } from '@/lib/api';
-import { storeUser } from '@/lib/auth';
 
 interface LoginFormValues {
   email: string;
@@ -129,11 +128,10 @@ const LoginPage: React.FC = () => {
 
     setIsSubmitting(true);
     try {
-      const user = await loginUser({
+      await loginUser({
         email: values.email.trim(),
         password: values.password,
       });
-      storeUser(user);
       router.push('/');
     } catch (error) {
       if (error instanceof ApiError && error.status === 401) {

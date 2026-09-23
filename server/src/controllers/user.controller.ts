@@ -1,12 +1,28 @@
 import { Request, Response } from 'express';
 
+import { clearAuthCookie, setAuthCookie } from '../lib/authCookie';
+import { signAuthToken } from '../lib/jwt';
 import { loginUserSchema, registerUserSchema } from '../schemas/user.schema';
 import {
   authenticateUser,
   createUser,
   EmailAlreadyExistsError,
+  getUserById,
   InvalidCredentialsError,
 } from '../services/user.service';
+
+export async function getCurrentUser(req: Request, res: Response) {
+  const user = await getUserById(req.userId as string);
+
+  if (!user) {
+    res
+      .status(401)
+      .json({ error: 'Unauthorized', message: 'Please sign in to continue.' });
+    return;
+  }
+
+  res.status(200).json(user);
+}
 
 export async function loginUser(req: Request, res: Response) {
   const parsed = loginUserSchema.safeParse(req.body);
@@ -21,6 +37,7 @@ export async function loginUser(req: Request, res: Response) {
 
   try {
     const user = await authenticateUser(parsed.data);
+    setAuthCookie(res, signAuthToken(user.id));
     res.status(200).json(user);
   } catch (error) {
     if (error instanceof InvalidCredentialsError) {
@@ -38,6 +55,11 @@ export async function loginUser(req: Request, res: Response) {
   }
 }
 
+export function logoutUser(_req: Request, res: Response) {
+  clearAuthCookie(res);
+  res.status(200).json({ message: 'Logged out.' });
+}
+
 export async function registerUser(req: Request, res: Response) {
   const parsed = registerUserSchema.safeParse(req.body);
 
@@ -51,6 +73,7 @@ export async function registerUser(req: Request, res: Response) {
 
   try {
     const user = await createUser(parsed.data);
+    setAuthCookie(res, signAuthToken(user.id));
     res.status(201).json(user);
   } catch (error) {
     if (error instanceof EmailAlreadyExistsError) {

@@ -13,6 +13,17 @@ jest.mock('../../components/PromoBanner/hooks/useCountdown', () => ({
   }),
 }));
 
+// The Header needs a mounted Next.js router and hits /api/users/me on mount;
+// stub both so tests stay hermetic and default to a logged-out Header.
+jest.mock('next/navigation', () => ({
+  ...jest.requireActual('next/navigation'),
+  useRouter: () => ({ push: jest.fn() }),
+}));
+
+jest.mock('../../lib/auth', () => ({
+  useCurrentUser: () => ({ isLoading: false, refresh: jest.fn(), user: null }),
+}));
+
 const renderWithChakra = (ui: React.ReactElement) => {
   return render(<ChakraProvider>{ui}</ChakraProvider>);
 };

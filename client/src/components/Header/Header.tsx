@@ -13,12 +13,20 @@ import {
 } from '@chakra-ui/react';
 import { HamburgerIcon } from '@chakra-ui/icons';
 import Link from 'next/link';
-import { usePathname } from 'next/navigation';
+import { usePathname, useRouter } from 'next/navigation';
+import { logoutUser } from '@/lib/api';
 import { useCurrentUser } from '@/lib/auth';
 
 const Header: React.FC = () => {
   const pathname = usePathname();
-  const currentUser = useCurrentUser();
+  const router = useRouter();
+  const { refresh, user: currentUser } = useCurrentUser();
+
+  const handleLogout = async () => {
+    await logoutUser();
+    await refresh();
+    router.push('/');
+  };
   return (
     <Box borderBottom="1px" borderColor="gray.200" bg="white">
       <Container maxW="container.xl">
@@ -168,7 +176,8 @@ const Header: React.FC = () => {
             {/* User Icon */}
             {currentUser ? (
               <IconButton
-                aria-label="User account"
+                aria-label="Sign out"
+                title={`Signed in as ${currentUser.name}. Click to sign out.`}
                 icon={
                   <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
                     <path
@@ -181,6 +190,7 @@ const Header: React.FC = () => {
                 }
                 variant="ghost"
                 size="sm"
+                onClick={handleLogout}
               />
             ) : (
               <Link href="/login" passHref legacyBehavior>

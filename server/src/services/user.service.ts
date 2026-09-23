@@ -70,3 +70,19 @@ export async function createUser(input: RegisterUserInput) {
     updatedAt: user.updatedAt,
   };
 }
+
+export async function getUserById(id: string) {
+  const user = await prisma.user.findUnique({ where: { id } });
+
+  if (!user) {
+    return null;
+  }
+
+  return {
+    createdAt: user.createdAt,
+    email: user.email,
+    id: user.id,
+    name: user.name,
+    updatedAt: user.updatedAt,
+  };
+}

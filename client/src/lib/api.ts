@@ -30,25 +30,9 @@ export class ApiError extends Error {
   }
 }
 
-async function postJson<TResponse>(
-  path: string,
-  body: unknown,
+async function parseResponse<TResponse>(
+  response: Response,
 ): Promise<TResponse> {
-  let response: Response;
-
-  try {
-    response = await fetch(`${API_BASE_URL}${path}`, {
-      body: JSON.stringify(body),
-      headers: { 'Content-Type': 'application/json' },
-      method: 'POST',
-    });
-  } catch {
-    throw new ApiError(
-      'Unable to reach the server. Please check your connection and try again.',
-      0,
-    );
-  }
-
   const data = await response.json().catch(() => null);
 
   if (!response.ok) {
@@ -62,6 +46,35 @@ async function postJson<TResponse>(
   return data as TResponse;
 }
 
+async function requestJson<TResponse>(
+  path: string,
+  init?: Parameters<typeof fetch>[1],
+): Promise<TResponse> {
+  let response: Response;
+
+  try {
+    response = await fetch(`${API_BASE_URL}${path}`, {
+      credentials: 'include',
+      ...init,
+    });
+  } catch {
+    throw new ApiError(
+      'Unable to reach the server. Please check your connection and try again.',
+      0,
+    );
+  }
+
+  return parseResponse<TResponse>(response);
+}
+
+function postJson<TResponse>(path: string, body: unknown): Promise<TResponse> {
+  return requestJson<TResponse>(path, {
+    body: JSON.stringify(body),
+    headers: { 'Content-Type': 'application/json' },
+    method: 'POST',
+  });
+}
+
 export function registerUser(
   input: RegisterUserInput,
 ): Promise<RegisteredUser> {
@@ -70,4 +83,12 @@ export function registerUser(
 
 export function loginUser(input: LoginUserInput): Promise<RegisteredUser> {
   return postJson<RegisteredUser>('/api/users/login', input);
+}
+
+export function getCurrentUser(): Promise<RegisteredUser> {
+  return requestJson<RegisteredUser>('/api/users/me');
+}
+
+export function logoutUser(): Promise<void> {
+  return postJson<void>('/api/users/logout', {});
 }
