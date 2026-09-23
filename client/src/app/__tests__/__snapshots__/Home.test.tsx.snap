@@ -6,7 +6,7 @@ exports[`Home component renders correctly and matches snapshot 1`] = `
     class="css-6b4w0n"
   >
     <div
-      class="css-7xzslr"
+      class="css-pgsp8a"
     >
       <div
         class="css-kwsxe9"
@@ -15,9 +15,9 @@ exports[`Home component renders correctly and matches snapshot 1`] = `
           class="css-1396cln"
         >
           <p
-            class="chakra-text css-1nxalj3"
+            class="chakra-text css-my0sfc"
           >
-            LIMITED SPRING SALE
+            LIMITED AUTUMN SALE
           </p>
           <div
             class="css-1yxs27r"
@@ -26,18 +26,18 @@ exports[`Home component renders correctly and matches snapshot 1`] = `
               class="css-1k2969j"
             >
               <div
-                class="css-1oai58j"
+                class="css-42yaaz"
               />
               <div
                 class="css-oc3fy4"
               >
                 <p
-                  class="chakra-text css-1k3umo3"
+                  class="chakra-text css-omioi4"
                 >
                   SAVE UP TO
                 </p>
                 <p
-                  class="chakra-text css-1f4npcx"
+                  class="chakra-text css-17yp9hm"
                 >
                   50%
                 </p>
@@ -48,35 +48,35 @@ exports[`Home component renders correctly and matches snapshot 1`] = `
             class="css-7se1um"
           >
             <p
-              class="chakra-text css-13o1x1e"
+              class="chakra-text css-1xpy2j0"
             >
-              LIMITED SPRING SALE
+              LIMITED AUTUMN SALE
             </p>
             <div
               class="css-k008qs"
             >
               <p
-                class="chakra-text css-1btcf2l"
+                class="chakra-text css-cuy6ui"
               >
                 01
               </p>
               <p
-                class="chakra-text css-1wtjw8d"
+                class="chakra-text css-1qqwrfc"
               >
                 :
               </p>
               <p
-                class="chakra-text css-1btcf2l"
+                class="chakra-text css-cuy6ui"
               >
                 30
               </p>
               <p
-                class="chakra-text css-1wtjw8d"
+                class="chakra-text css-1qqwrfc"
               >
                 :
               </p>
               <p
-                class="chakra-text css-1btcf2l"
+                class="chakra-text css-cuy6ui"
               >
                 45
               </p>
@@ -89,18 +89,18 @@ exports[`Home component renders correctly and matches snapshot 1`] = `
               class="css-1k2969j"
             >
               <div
-                class="css-dkbemg"
+                class="css-42yaaz"
               />
               <div
                 class="css-oc3fy4"
               >
                 <p
-                  class="chakra-text css-1k3umo3"
+                  class="chakra-text css-omioi4"
                 >
                   SAVE UP TO
                 </p>
                 <p
-                  class="chakra-text css-1f4npcx"
+                  class="chakra-text css-17yp9hm"
                 >
                   50%
                 </p>

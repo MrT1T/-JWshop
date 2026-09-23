@@ -3,6 +3,7 @@ import PromoBanner from '@/components/PromoBanner';
 import WinterSale from '@/components/PromoBanner/Promos/WinterSale';
 import ValentinesDay from '@/components/PromoBanner/Promos/ValentinesDay';
 import SpringSale from '@/components/PromoBanner/Promos/SpringSale';
+import AutumnSale from '@/components/PromoBanner/Promos/AutumnSale';
 
 export interface PromoBannerConfig {
   id: string;
@@ -35,7 +36,13 @@ export const promoBanners: PromoBannerConfig[] = [
   {
     id: 'spring-sale',
     component: SpringSale,
-    isActive: true,
+    isActive: false,
     priority: 3,
+  },
+  {
+    id: 'autumn-sale',
+    component: AutumnSale,
+    isActive: true,
+    priority: 4,
   },
 ];
