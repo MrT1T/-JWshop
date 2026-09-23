@@ -3,7 +3,7 @@
 exports[`CheckoutPage component renders correctly and matches snapshot 1`] = `
 <DocumentFragment>
   <div
-    class="css-1cil781"
+    class="css-7xzslr"
   >
     <div
       class="css-kwsxe9"
@@ -12,9 +12,9 @@ exports[`CheckoutPage component renders correctly and matches snapshot 1`] = `
         class="css-1396cln"
       >
         <p
-          class="chakra-text css-nkk3iy"
+          class="chakra-text css-1nxalj3"
         >
-          LIMITED WINTER SALE
+          LIMITED SPRING SALE
         </p>
         <div
           class="css-1yxs27r"
@@ -23,7 +23,7 @@ exports[`CheckoutPage component renders correctly and matches snapshot 1`] = `
             class="css-1k2969j"
           >
             <div
-              class="css-12q1f50"
+              class="css-1oai58j"
             />
             <div
               class="css-oc3fy4"
@@ -45,35 +45,35 @@ exports[`CheckoutPage component renders correctly and matches snapshot 1`] = `
           class="css-7se1um"
         >
           <p
-            class="chakra-text css-16arvcm"
+            class="chakra-text css-13o1x1e"
           >
-            LIMITED WINTER SALE
+            LIMITED SPRING SALE
           </p>
           <div
             class="css-k008qs"
           >
             <p
-              class="chakra-text css-w9n5vf"
+              class="chakra-text css-1btcf2l"
             >
               01
             </p>
             <p
-              class="chakra-text css-lfq40t"
+              class="chakra-text css-1wtjw8d"
             >
               :
             </p>
             <p
-              class="chakra-text css-w9n5vf"
+              class="chakra-text css-1btcf2l"
             >
               30
             </p>
             <p
-              class="chakra-text css-lfq40t"
+              class="chakra-text css-1wtjw8d"
             >
               :
             </p>
             <p
-              class="chakra-text css-w9n5vf"
+              class="chakra-text css-1btcf2l"
             >
               45
             </p>
@@ -86,7 +86,7 @@ exports[`CheckoutPage component renders correctly and matches snapshot 1`] = `
             class="css-1k2969j"
           >
             <div
-              class="css-12q1f50"
+              class="css-dkbemg"
             />
             <div
               class="css-oc3fy4"

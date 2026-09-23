@@ -129,13 +129,17 @@ describe('Home component', () => {
     renderWithChakra(<Home />);
     expect(screen.getAllByRole('heading', { name: 'JWShop' })).toHaveLength(2);
     expect(screen.getByPlaceholderText('Enter your email')).toBeInTheDocument();
-    expect(screen.getByRole('button', { name: 'Subscribe' })).toBeInTheDocument();
+    expect(
+      screen.getByRole('button', { name: 'Subscribe' }),
+    ).toBeInTheDocument();
   });
 
   // INTERACTIONS
   it('allows typing in the email input', async () => {
     renderWithChakra(<Home />);
-    const input = screen.getByPlaceholderText('Enter your email') as HTMLInputElement;
+    const input = screen.getByPlaceholderText(
+      'Enter your email',
+    ) as HTMLInputElement;
     await userEvent.type(input, 'test@example.com');
     expect(input.value).toBe('test@example.com');
   });

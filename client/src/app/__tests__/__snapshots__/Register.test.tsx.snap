@@ -1,9 +1,9 @@
 // Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
-exports[`Home component renders correctly and matches snapshot 1`] = `
+exports[`RegisterPage component renders correctly and matches snapshot 1`] = `
 <DocumentFragment>
   <div
-    class="css-6b4w0n"
+    class="css-123acky"
   >
     <div
       class="css-7xzslr"
@@ -277,339 +277,365 @@ exports[`Home component renders correctly and matches snapshot 1`] = `
       </div>
     </div>
     <div
-      class="css-47kejj"
+      class="chakra-container css-14xp4nx"
     >
       <div
-        class="chakra-container css-11vl7h3"
+        class="css-c8vgvd"
       >
-        <section
-          class="css-zkgrew"
+        <form
+          class="css-ey2k6p"
         >
           <div
-            class="chakra-stack css-6lnovw"
+            class="chakra-stack css-1tczn7r"
           >
             <h2
-              class="chakra-heading css-12gzgmm"
+              class="chakra-heading css-etqs3z"
             >
-              A Unique Watch That Fits Your Style
+              Create your account
             </h2>
             <p
-              class="chakra-text css-ons5ec"
+              class="chakra-text css-rukqh5"
             >
-              The new Lawson collection is already here! This quartz Lawson Franklin 38 model, designed with simplicity and elegance, is truly a cherry on the cake. Comes in different sizes and band colors, has a stainless steel back for a personalized engraving.
+              Join JWShop for early access to new arrivals and member-only pricing.
             </p>
-            <div
-              class="chakra-stack css-yr5oa1"
-            >
-              <button
-                class="chakra-button css-11pi6vv"
-                type="button"
-              >
-                Learn More
-              </button>
-              <button
-                class="chakra-button css-1wdjfbj"
-                type="button"
-              >
-                View
-              </button>
-            </div>
           </div>
           <div
-            class="css-1t8hi50"
-          />
-        </section>
-      </div>
-    </div>
-    <div
-      class="css-vgu039"
-    >
-      <div
-        class="chakra-container css-11vl7h3"
-      >
-        <div
-          class="css-1ijhh2b"
-        >
-          <div
-            class="chakra-stack css-dpnoar"
-          >
-            <h2
-              class="chakra-heading css-1telf0v"
-            >
-              Ideal Has Never Been Closer
-            </h2>
-            <p
-              class="chakra-text css-1fevzpm"
-            >
-              Have you ever come across a thing that is impossible to resist? Meet the Lawson Jefferson 38!   Run by the vibration of a quartz crystal (32,786 times per second) under current to keep possibly accurate time.   You will feel absolutely over the moon with it, we guarantee!
-            </p>
-            <button
-              class="chakra-button css-1l6c48g"
-              type="button"
-            >
-              Learn More
-            </button>
-          </div>
-          <div
-            class="css-1g0vid6"
-          />
-        </div>
-      </div>
-    </div>
-    <div
-      class="css-1vn897a"
-    >
-      <div
-        class="chakra-container css-11vl7h3"
-      >
-        <h2
-          class="chakra-heading css-6z9q5j"
-        >
-          Our Bestsellers
-        </h2>
-        <div
-          class="css-11c4uiv"
-        >
-          <div
-            class="css-scocrv"
+            class="chakra-stack css-42ki38"
           >
             <div
-              class="css-c81t7s"
-            />
-            <div
-              class="css-r4358i"
+              class="chakra-form-control css-1kxonj9"
+              role="group"
             >
-              <p
-                class="chakra-text css-1m8xmrz"
+              <label
+                class="chakra-form__label css-1gib1w2"
+                for="field-«r0»"
+                id="field-«r0»-label"
               >
-                Gold chunky paperclip link chain
-              </p>
-              <p
-                class="chakra-text css-wjomy9"
-              >
-                19,00 £
-              </p>
-            </div>
-          </div>
-          <div
-            class="css-scocrv"
-          >
-            <div
-              class="css-c81t7s"
-            />
-            <div
-              class="css-r4358i"
-            >
-              <p
-                class="chakra-text css-1m8xmrz"
-              >
-                Sterling silver criss cross ring
-              </p>
-              <p
-                class="chakra-text css-wjomy9"
-              >
-                23,00 £
-              </p>
-            </div>
-          </div>
-          <div
-            class="css-scocrv"
-          >
-            <div
-              class="css-c81t7s"
-            />
-            <div
-              class="css-r4358i"
-            >
-              <p
-                class="chakra-text css-1m8xmrz"
-              >
-                Ear cuff with cubic zirconias
-              </p>
-              <p
-                class="chakra-text css-wjomy9"
-              >
-                8,00 £
-              </p>
-            </div>
-          </div>
-          <div
-            class="css-scocrv"
-          >
-            <div
-              class="css-c81t7s"
-            />
-            <div
-              class="css-r4358i"
-            >
-              <p
-                class="chakra-text css-1m8xmrz"
-              >
-                Set of two gold stacking layering necklaces
-              </p>
-              <p
-                class="chakra-text css-wjomy9"
+                Full name
+              </label>
+              <input
+                class="chakra-input css-1m40kqu"
+                id="field-«r0»"
+                placeholder="Jane Doe"
+                value=""
               />
+            </div>
+            <div
+              class="chakra-form-control css-1kxonj9"
+              role="group"
+            >
+              <label
+                class="chakra-form__label css-1gib1w2"
+                for="field-«r1»"
+                id="field-«r1»-label"
+              >
+                Email address
+              </label>
+              <input
+                class="chakra-input css-1m40kqu"
+                id="field-«r1»"
+                placeholder="jane@example.com"
+                type="email"
+                value=""
+              />
+            </div>
+            <div
+              class="chakra-form-control css-1kxonj9"
+              role="group"
+            >
+              <label
+                class="chakra-form__label css-1gib1w2"
+                for="field-«r2»"
+                id="field-«r2»-label"
+              >
+                Password
+              </label>
               <div
-                class="css-1k9efnl"
+                class="chakra-input__group css-1y0e7gb"
+                data-group="true"
               >
-                <span
-                  class="chakra-text css-dnv4fc"
+                <input
+                  class="chakra-input css-g8sg45"
+                  id="field-«r2»"
+                  placeholder="Create a password"
+                  type="password"
+                  value=""
+                />
+                <div
+                  class="chakra-input__right-element css-h6d4ak"
                 >
-                  28,00 £
-                </span>
-                <span
-                  class="chakra-text css-19gpx6"
-                >
-                  -10%
-                </span>
-                <span
-                  class="chakra-text css-niwogb"
-                >
-                  26,00 £
-                </span>
+                  <button
+                    aria-label="Show password"
+                    class="chakra-button css-okm0kr"
+                    type="button"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="chakra-icon css-onkibi"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <g
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M23.432,10.524C20.787,7.614,16.4,4.538,12,4.6,7.6,4.537,3.213,7.615.568,10.524a2.211,2.211,0,0,0,0,2.948C3.182,16.351,7.507,19.4,11.839,19.4h.308c4.347,0,8.671-3.049,11.288-5.929A2.21,2.21,0,0,0,23.432,10.524ZM7.4,12A4.6,4.6,0,1,1,12,16.6,4.6,4.6,0,0,1,7.4,12Z"
+                        />
+                        <circle
+                          cx="12"
+                          cy="12"
+                          r="2"
+                        />
+                      </g>
+                    </svg>
+                  </button>
+                </div>
               </div>
-              <p />
             </div>
-          </div>
-        </div>
-        <div
-          class="chakra-stack css-1c2p0ni"
-        >
-          <button
-            class="chakra-button css-1pywa0d"
-            type="button"
-          >
-            Show all
-          </button>
-          <button
-            class="chakra-button css-11pi6vv"
-            type="button"
-          >
-            View
-          </button>
-        </div>
-      </div>
-    </div>
-    <div
-      class="css-vgu039"
-    >
-      <div
-        class="chakra-container css-11vl7h3"
-      >
-        <div
-          class="css-zbydqo"
-        >
-          <div
-            class="chakra-stack css-dpnoar"
-          >
-            <h2
-              class="chakra-heading css-1telf0v"
+            <div
+              class="chakra-form-control css-1kxonj9"
+              role="group"
             >
-              Swiss Essence
-            </h2>
-            <p
-              class="chakra-text css-1fevzpm"
+              <label
+                class="chakra-form__label css-1gib1w2"
+                for="field-«r3»"
+                id="field-«r3»-label"
+              >
+                Confirm password
+              </label>
+              <div
+                class="chakra-input__group css-1y0e7gb"
+                data-group="true"
+              >
+                <input
+                  class="chakra-input css-g8sg45"
+                  id="field-«r3»"
+                  placeholder="Re-enter your password"
+                  type="password"
+                  value=""
+                />
+                <div
+                  class="chakra-input__right-element css-h6d4ak"
+                >
+                  <button
+                    aria-label="Show password"
+                    class="chakra-button css-okm0kr"
+                    type="button"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="chakra-icon css-onkibi"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <g
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M23.432,10.524C20.787,7.614,16.4,4.538,12,4.6,7.6,4.537,3.213,7.615.568,10.524a2.211,2.211,0,0,0,0,2.948C3.182,16.351,7.507,19.4,11.839,19.4h.308c4.347,0,8.671-3.049,11.288-5.929A2.21,2.21,0,0,0,23.432,10.524ZM7.4,12A4.6,4.6,0,1,1,12,16.6,4.6,4.6,0,0,1,7.4,12Z"
+                        />
+                        <circle
+                          cx="12"
+                          cy="12"
+                          r="2"
+                        />
+                      </g>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div
+              class="chakra-form-control css-1kxonj9"
+              role="group"
             >
-              The first association that comes to one’s mind with the phrase “a good wristwatch” is naturally a one made somewhere in Switzerland. Do you want to know what makes Swiss watches stand out?
-            </p>
+              <label
+                class="chakra-checkbox css-13ux7gq"
+              >
+                <input
+                  aria-checked="false"
+                  aria-disabled="false"
+                  aria-invalid="false"
+                  class="chakra-checkbox__input"
+                  id="field-«r4»"
+                  style="border: 0px; clip: rect(0px, 0px, 0px, 0px); height: 1px; width: 1px; margin: -1px; padding: 0px; overflow: hidden; white-space: nowrap; position: absolute;"
+                  type="checkbox"
+                />
+                <span
+                  aria-hidden="true"
+                  class="chakra-checkbox__control css-8ddrgo"
+                />
+                <span
+                  class="chakra-checkbox__label css-6x44c9"
+                >
+                  <p
+                    class="chakra-text css-zm3ud3"
+                  >
+                    I agree to the Terms of Service and Privacy Policy.
+                  </p>
+                </span>
+              </label>
+            </div>
             <button
-              class="chakra-button css-1l6c48g"
-              type="button"
+              class="chakra-button css-wtahvx"
+              type="submit"
             >
-              Learn More
+              Create account
             </button>
+            <p
+              class="chakra-text css-8bknka"
+            >
+              Already have an account? 
+              <a
+                class="chakra-link css-15fitui"
+                href="/"
+              >
+                Sign in
+              </a>
+            </p>
           </div>
-          <div
-            class="css-1g0vid6"
-          />
-        </div>
-      </div>
-    </div>
-    <div
-      class="css-10q7ld9"
-    >
-      <div
-        class="chakra-container css-11vl7h3"
-      >
-        <h2
-          class="chakra-heading css-6z9q5j"
-        >
-          Journal & Blog
-        </h2>
+        </form>
         <div
-          class="css-1n1gy0j"
+          class="css-1u52f6j"
         >
+          <h2
+            class="chakra-heading css-d8lkyw"
+          >
+            Why join JWShop?
+          </h2>
           <div
-            class="css-1khvcvn"
+            class="chakra-stack css-ahthbn"
           >
             <div
-              class="css-1p16cf6"
-            />
-            <div
-              class="css-rmlqu9"
+              class="chakra-stack css-ptvylg"
             >
-              <p
-                class="chakra-text css-mspf89"
+              <div
+                class="css-zu8rl9"
               >
-                26.08.2020
-              </p>
-              <p
-                class="chakra-text css-b24wyp"
+                <svg
+                  class="chakra-icon css-bokek7"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12,0A12,12,0,1,0,24,12,12.014,12.014,0,0,0,12,0Zm6.927,8.2-6.845,9.289a1.011,1.011,0,0,1-1.43.188L5.764,13.769a1,1,0,1,1,1.25-1.562l4.076,3.261,6.227-8.451A1,1,0,1,1,18.927,8.2Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </div>
+              <div
+                class="css-0"
               >
-                What Are the Types of Watch Movements?
-              </p>
+                <p
+                  class="chakra-text css-2ygcmq"
+                >
+                  Free shipping
+                </p>
+                <p
+                  class="chakra-text css-1pahln7"
+                >
+                  On every order over $75, no promo code needed.
+                </p>
+              </div>
             </div>
-          </div>
-          <div
-            class="css-1khvcvn"
-          >
             <div
-              class="css-1p16cf6"
-            />
-            <div
-              class="css-rmlqu9"
+              class="chakra-stack css-ptvylg"
             >
-              <p
-                class="chakra-text css-mspf89"
+              <div
+                class="css-zu8rl9"
               >
-                26.08.2020
-              </p>
-              <p
-                class="chakra-text css-b24wyp"
+                <svg
+                  class="chakra-icon css-bokek7"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12,0A12,12,0,1,0,24,12,12.014,12.014,0,0,0,12,0Zm6.927,8.2-6.845,9.289a1.011,1.011,0,0,1-1.43.188L5.764,13.769a1,1,0,1,1,1.25-1.562l4.076,3.261,6.227-8.451A1,1,0,1,1,18.927,8.2Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </div>
+              <div
+                class="css-0"
               >
-                What Are the Types of Watch Movements?
-              </p>
+                <p
+                  class="chakra-text css-2ygcmq"
+                >
+                  Early access
+                </p>
+                <p
+                  class="chakra-text css-1pahln7"
+                >
+                  Shop new arrivals and seasonal sales before anyone else.
+                </p>
+              </div>
             </div>
-          </div>
-          <div
-            class="css-1khvcvn"
-          >
             <div
-              class="css-1p16cf6"
-            />
-            <div
-              class="css-rmlqu9"
+              class="chakra-stack css-ptvylg"
             >
-              <p
-                class="chakra-text css-mspf89"
+              <div
+                class="css-zu8rl9"
               >
-                26.08.2020
-              </p>
-              <p
-                class="chakra-text css-b24wyp"
+                <svg
+                  class="chakra-icon css-bokek7"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12,0A12,12,0,1,0,24,12,12.014,12.014,0,0,0,12,0Zm6.927,8.2-6.845,9.289a1.011,1.011,0,0,1-1.43.188L5.764,13.769a1,1,0,1,1,1.25-1.562l4.076,3.261,6.227-8.451A1,1,0,1,1,18.927,8.2Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </div>
+              <div
+                class="css-0"
               >
-                What Are the Types of Watch Movements?
-              </p>
+                <p
+                  class="chakra-text css-2ygcmq"
+                >
+                  Save your wishlist
+                </p>
+                <p
+                  class="chakra-text css-1pahln7"
+                >
+                  Keep track of the pieces you love across every visit.
+                </p>
+              </div>
+            </div>
+            <div
+              class="chakra-stack css-ptvylg"
+            >
+              <div
+                class="css-zu8rl9"
+              >
+                <svg
+                  class="chakra-icon css-bokek7"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12,0A12,12,0,1,0,24,12,12.014,12.014,0,0,0,12,0Zm6.927,8.2-6.845,9.289a1.011,1.011,0,0,1-1.43.188L5.764,13.769a1,1,0,1,1,1.25-1.562l4.076,3.261,6.227-8.451A1,1,0,1,1,18.927,8.2Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </div>
+              <div
+                class="css-0"
+              >
+                <p
+                  class="chakra-text css-2ygcmq"
+                >
+                  Faster checkout
+                </p>
+                <p
+                  class="chakra-text css-1pahln7"
+                >
+                  Store your details once and breeze through checkout next time.
+                </p>
+              </div>
             </div>
           </div>
         </div>
-        <button
-          class="chakra-button css-idmvf9"
-          type="button"
-        >
-          Read more →
-        </button>
       </div>
     </div>
     <footer

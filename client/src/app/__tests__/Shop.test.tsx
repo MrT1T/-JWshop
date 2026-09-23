@@ -35,7 +35,10 @@ describe('ShopPage component', () => {
   it('renders the shop page title', () => {
     renderWithChakra(<ShopPage />);
     // Проверяем наличие заголовка Shop на странице (не в навигации)
-    const shopHeadings = screen.getAllByRole('heading', { name: /shop/i, level: 2 });
+    const shopHeadings = screen.getAllByRole('heading', {
+      name: /shop/i,
+      level: 2,
+    });
     expect(shopHeadings.length).toBeGreaterThan(0);
   });
 
@@ -137,13 +140,17 @@ describe('ShopPage component', () => {
   it('renders sidebar and main content areas', () => {
     renderWithChakra(<ShopPage />);
     // Проверяем наличие контейнера с продуктами
-    const container = screen.getAllByRole('img')[0].closest('.chakra-container');
+    const container = screen
+      .getAllByRole('img')[0]
+      .closest('.chakra-container');
     expect(container).toBeInTheDocument();
   });
 
   it('uses responsive grid layout', () => {
     renderWithChakra(<ShopPage />);
-    const productGrid = screen.getAllByRole('img')[0].closest('[class*="css-"]');
+    const productGrid = screen
+      .getAllByRole('img')[0]
+      .closest('[class*="css-"]');
     expect(productGrid).toBeInTheDocument();
   });
 });

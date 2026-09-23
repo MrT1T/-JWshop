@@ -12,7 +12,7 @@ export const useCountdown = (targetDate: Date) => {
   useEffect(() => {
     setCountDown(initialValue);
     const interval = setInterval(() => {
-      setCountDown(prevState => {
+      setCountDown((prevState) => {
         if (prevState > 0) {
           const value = targetDate.getTime() - new Date().getTime();
 
